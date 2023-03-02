@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h2>在庫状況</h2>
+<%= link_to '新規', new_stock_path, class: 'btn btn-primary new-btn' %>
+<table>
+  <thead>
+    <tr>
+      <th>インク名</th>
+      <th>色</th>
+      <th>ロケーション</th>
+      <th>段</th>
+      <th>在庫数</th>
+      <th>管理者</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @stocks.each do |stock| %>
+      <tr>
+        <td><%= stock.ink_name %></td>
+        <td><%= stock.color_type %></td>
+        <td><%= stock.location_id %></td>
+        <td><%= stock.stage %></td>
+        <td><%= stock.quantity %></td>
+        <td><%= stock.user_id %></td>
+        <td><%= link_to '詳細', stock %></td>
+        <td><%= link_to '編集', edit_stock_path(stock) %></td>
+        <td><%= link_to '削除', stock, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

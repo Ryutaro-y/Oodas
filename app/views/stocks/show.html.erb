@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h2>詳細</h2>
+<p>
+  <strong>インク名:</strong>
+  <%= @stock.ink_name %>
+</p>
+
+<p>
+  <strong>色:</strong>
+  <%= @stock.color_type %>
+</p>
+
+<p>
+  <strong>ロケーション:</strong>
+  <%= @stock.location_id %>
+</p>
+
+<p>
+  <strong>段:</strong>
+  <%= @stock.stage %>
+</p>
+
+<p>
+  <strong>在庫数:</strong>
+  <%= @stock.quantity %>
+</p>
+
+<p>
+  <strong>管理者:</strong>
+  <%= @stock.user_id %>
+</p>
+
+<%= link_to '編集', edit_stock_path(@stock) %> |
+<%= link_to '戻る', stocks_path %>

@@ -112,3 +112,2453 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 43ms (Views: 22.6ms | Allocations: 406)
 
 
+Started GET "/" for 172.29.0.1 at 2023-03-01 08:53:35 +0000
+Cannot render console from 172.29.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "myapp_development" does not exist
+):
+  
+activerecord (6.1.7.2) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.7.2) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.7.2) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.7.2) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.7.2) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.7.2) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.7.2) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.7.2) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.1.7.2) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 172.30.0.1 at 2023-03-01 23:45:03 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "myapp_development" does not exist
+):
+  
+activerecord (6.1.7.2) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.7.2) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.7.2) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.7.2) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.7.2) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.7.2) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.7.2) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.7.2) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.1.7.2) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 172.31.0.1 at 2023-03-01 23:51:40 +0000
+Cannot render console from 172.31.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "stock-order_app_development" does not exist
+):
+  
+activerecord (6.1.7.2) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.7.2) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.7.2) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.7.2) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.7.2) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.7.2) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.7.2) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.7.2) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.1.7.2) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 172.31.0.1 at 2023-03-01 23:51:41 +0000
+Cannot render console from 172.31.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "stock-order_app_development" does not exist
+):
+  
+activerecord (6.1.7.2) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.7.2) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.7.2) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.7.2) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.7.2) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.7.2) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.7.2) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.7.2) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.1.7.2) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (3556.0ms)[0m  [1m[35mCREATE DATABASE "stock-order_app_development" ENCODING = 'unicode'[0m
+  [1m[35m (2865.9ms)[0m  [1m[35mCREATE DATABASE "stock-order_app_test" ENCODING = 'unicode'[0m
+Started GET "/" for 192.168.0.1 at 2023-03-01 23:53:59 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-6.1.7.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-6.1.7.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 14.2ms | Allocations: 498)
+Completed 200 OK in 82ms (Views: 30.3ms | ActiveRecord: 0.0ms | Allocations: 4095)
+
+
+Started GET "/stock/index" for 192.168.0.1 at 2023-03-02 00:25:55 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (84.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (34.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (6.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230302000659_create_stocks.rb
+
+
+):
+  
+activerecord (6.1.7.2) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.7.2) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.7.2) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activesupport (6.1.7.2) lib/active_support/evented_file_update_checker.rb:65:in `execute_if_updated'
+activerecord (6.1.7.2) lib/active_record/migration.rb:597:in `block in call'
+activerecord (6.1.7.2) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.7.2) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.1.7.2) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 192.168.0.1 at 2023-03-02 00:26:30 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230302000659_create_stocks.rb
+
+
+):
+  
+activerecord (6.1.7.2) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.7.2) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.7.2) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.7.2) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.7.2) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.7.2) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.1.7.2) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 192.168.0.1 at 2023-03-02 00:26:35 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230302000659_create_stocks.rb
+
+
+):
+  
+activerecord (6.1.7.2) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.7.2) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.7.2) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.7.2) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.7.2) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.7.2) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.1.7.2) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 192.168.0.1 at 2023-03-02 00:26:37 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230302000659_create_stocks.rb
+
+
+):
+  
+activerecord (6.1.7.2) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.7.2) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.7.2) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.7.2) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.7.2) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.7.2) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.1.7.2) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2869832675165108730)[0m
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateStocks (20230302000659)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (126.6ms)[0m  [1m[35mCREATE TABLE "stocks" ("id" bigserial primary key, "ink_name" character varying, "color_type" character varying, "quantity" integer, "user_id" bigint NOT NULL, "location_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_f4b3894c0d"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_08945ddc15"
+FOREIGN KEY ("location_id")
+  REFERENCES "locations" ("id")
+)[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(2869832675165108730)[0m
+Started GET "/" for 192.168.0.1 at 2023-03-02 00:28:38 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230302000659_create_stocks.rb
+
+
+):
+  
+activerecord (6.1.7.2) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.7.2) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.7.2) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.7.2) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.7.2) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.7.2) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.1.7.2) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 192.168.0.1 at 2023-03-02 00:28:46 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230302000659_create_stocks.rb
+
+
+):
+  
+activerecord (6.1.7.2) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.7.2) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.7.2) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.7.2) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.7.2) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.7.2) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.1.7.2) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 192.168.0.1 at 2023-03-02 00:28:59 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230302000659_create_stocks.rb
+
+
+):
+  
+activerecord (6.1.7.2) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.7.2) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.7.2) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.7.2) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.7.2) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.7.2) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.1.7.2) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 192.168.0.1 at 2023-03-02 00:29:00 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230302000659_create_stocks.rb
+
+
+):
+  
+activerecord (6.1.7.2) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.7.2) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.7.2) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.7.2) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.7.2) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.7.2) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.1.7.2) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/stock/index" for 192.168.0.1 at 2023-03-02 00:29:35 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230302000659_create_stocks.rb
+
+
+):
+  
+activerecord (6.1.7.2) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.7.2) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.7.2) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.7.2) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.7.2) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.7.2) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.1.7.2) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/stocks/index" for 192.168.0.1 at 2023-03-02 00:31:03 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230302000659_create_stocks.rb
+
+
+):
+  
+activerecord (6.1.7.2) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.7.2) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.7.2) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.7.2) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.7.2) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.7.2) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.1.7.2) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2869832675165108730)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(2869832675165108730)[0m
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2869832675165108730)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2869832675165108730)[0m
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2869832675165108730)[0m
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20230302005327)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (65.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "email" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (11.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230302005327"]]
+  [1m[36mTRANSACTION (14.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateLocations (20230302005454)
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (36.6ms)[0m  [1m[35mCREATE TABLE "locations" ("id" bigserial primary key, "name" character varying, "address" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230302005454"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateStocks (20230302005955)
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (60.9ms)[0m  [1m[35mCREATE TABLE "stocks" ("id" bigserial primary key, "ink_name" character varying, "color_type" character varying, "quantity" integer, "user_id" bigint NOT NULL, "location_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_f4b3894c0d"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_08945ddc15"
+FOREIGN KEY ("location_id")
+  REFERENCES "locations" ("id")
+)[0m
+  [1m[35m (10.6ms)[0m  [1m[35mCREATE INDEX "index_stocks_on_user_id" ON "stocks" ("user_id")[0m
+  [1m[35m (9.1ms)[0m  [1m[35mCREATE INDEX "index_stocks_on_location_id" ON "stocks" ("location_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230302005955"]]
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (6.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (8.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-03-02 01:00:33.564085"], ["updated_at", "2023-03-02 01:00:33.564085"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(2869832675165108730)[0m
+  [1m[35m (8.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/stocks/index" for 192.168.0.1 at 2023-03-02 01:00:49 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mStock Load (10.8ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks" WHERE "stocks"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/stocks_controller.rb:63:in `set_stock'
+Completed 404 Not Found in 169ms (ActiveRecord: 44.4ms | Allocations: 5890)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Stock with 'id'=index):
+  
+app/controllers/stocks_controller.rb:63:in `set_stock'
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 01:09:13 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (5.8ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 63.3ms | Allocations: 6815)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /myapp/public/packs
+[Webpacker] Hash: 50918b56ca7f40b23f18
+Version: webpack 4.46.0
+Time: 9111ms
+Built at: 03/02/2023 1:09:32 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-0451a6cb62a359377156.js    124 KiB  application  [emitted] [immutable]  application
+js/application-0451a6cb62a359377156.js.map    135 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-0451a6cb62a359377156.js js/application-0451a6cb62a359377156.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 493 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 553 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 19424.8ms | Allocations: 31021)
+Completed 200 OK in 19447ms (Views: 19438.7ms | ActiveRecord: 28.7ms | Allocations: 32383)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 01:10:46 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 187.2ms | Allocations: 8914)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 194.8ms | Allocations: 9337)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 228.2ms | Allocations: 12979)
+Completed 200 OK in 245ms (Views: 230.8ms | ActiveRecord: 0.0ms | Allocations: 17205)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 01:10:59 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (2.5ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 13.0ms | Allocations: 1051)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 59.1ms | Allocations: 5169)
+Completed 200 OK in 64ms (Views: 60.0ms | ActiveRecord: 2.5ms | Allocations: 5702)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 01:26:52 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (7.2ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 55.3ms | Allocations: 6716)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 89.4ms | Allocations: 10685)
+Completed 200 OK in 96ms (Views: 93.6ms | ActiveRecord: 26.8ms | Allocations: 12086)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 01:39:42 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (5.5ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 59.6ms | Allocations: 6667)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 95.9ms | Allocations: 10632)
+Completed 200 OK in 104ms (Views: 101.7ms | ActiveRecord: 23.1ms | Allocations: 12049)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 01:42:43 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (1.2ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 950)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.5ms | Allocations: 4511)
+Completed 200 OK in 41ms (Views: 38.7ms | ActiveRecord: 1.2ms | Allocations: 5028)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 01:51:43 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (5.4ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 49.9ms | Allocations: 6073)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 370.5ms | Allocations: 20260)
+Completed 200 OK in 374ms (Views: 373.1ms | ActiveRecord: 23.6ms | Allocations: 20721)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 02:10:39 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (9.6ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 63.8ms | Allocations: 6675)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 539.8ms | Allocations: 22060)
+Completed 200 OK in 549ms (Views: 546.0ms | ActiveRecord: 33.3ms | Allocations: 23429)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 02:12:54 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (0.9ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 951)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 386.6ms | Allocations: 15094)
+Completed 200 OK in 395ms (Views: 393.1ms | ActiveRecord: 0.9ms | Allocations: 15612)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 02:14:49 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (1.2ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 953)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 363.8ms | Allocations: 15116)
+Completed 200 OK in 370ms (Views: 367.0ms | ActiveRecord: 1.2ms | Allocations: 15579)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 02:16:12 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (1.3ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 1495)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.8ms | Allocations: 5459)
+Completed 200 OK in 46ms (Views: 43.3ms | ActiveRecord: 1.3ms | Allocations: 6831)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 02:16:31 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (0.9ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1443)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.8ms | Allocations: 5407)
+Completed 200 OK in 48ms (Views: 45.3ms | ActiveRecord: 0.9ms | Allocations: 6828)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 02:23:03 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (6.0ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 50.3ms | Allocations: 6728)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 389.9ms | Allocations: 22349)
+Completed 200 OK in 395ms (Views: 393.8ms | ActiveRecord: 23.3ms | Allocations: 23766)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 02:23:09 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (1.3ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 964)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.8ms | Allocations: 4533)
+Completed 200 OK in 41ms (Views: 38.5ms | ActiveRecord: 1.3ms | Allocations: 5052)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 02:23:58 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (0.8ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 962)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.6ms | Allocations: 4533)
+Completed 200 OK in 45ms (Views: 43.3ms | ActiveRecord: 0.8ms | Allocations: 4995)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 02:25:48 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (0.9ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 962)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 317.2ms | Allocations: 16038)
+Completed 200 OK in 322ms (Views: 319.7ms | ActiveRecord: 0.9ms | Allocations: 16501)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 02:29:55 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 15.3ms | Allocations: 2073)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 27.5ms | Allocations: 2476)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.2ms | Allocations: 6099)
+Completed 200 OK in 81ms (Views: 70.8ms | ActiveRecord: 0.0ms | Allocations: 6716)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 02:29:59 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 15.5ms | Allocations: 1575)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 18.3ms | Allocations: 1698)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.7ms | Allocations: 5352)
+Completed 200 OK in 65ms (Views: 63.4ms | ActiveRecord: 0.0ms | Allocations: 5832)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 02:38:01 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (6.1ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 67.5ms | Allocations: 6111)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 475.2ms | Allocations: 21571)
+Completed 200 OK in 480ms (Views: 478.7ms | ActiveRecord: 33.3ms | Allocations: 22031)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 02:48:26 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (5.4ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 50.2ms | Allocations: 6059)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 396.1ms | Allocations: 20681)
+Completed 200 OK in 401ms (Views: 399.9ms | ActiveRecord: 22.6ms | Allocations: 21143)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 02:49:32 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 8.1ms | Allocations: 1575)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 11.2ms | Allocations: 1704)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.0ms | Allocations: 5362)
+Completed 200 OK in 52ms (Views: 50.5ms | ActiveRecord: 0.0ms | Allocations: 5836)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 02:50:10 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (1.8ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 964)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 324.9ms | Allocations: 16068)
+Completed 200 OK in 330ms (Views: 326.8ms | ActiveRecord: 1.8ms | Allocations: 16530)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 02:50:18 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (0.9ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 962)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.5ms | Allocations: 4533)
+Completed 200 OK in 41ms (Views: 39.8ms | ActiveRecord: 0.9ms | Allocations: 4995)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 02:50:32 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (0.8ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 962)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.8ms | Allocations: 4568)
+Completed 200 OK in 62ms (Views: 59.9ms | ActiveRecord: 0.8ms | Allocations: 5031)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 02:50:52 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (1.1ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 962)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 307.1ms | Allocations: 16483)
+Completed 200 OK in 310ms (Views: 308.4ms | ActiveRecord: 1.1ms | Allocations: 16946)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 02:52:57 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (1.0ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 964)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 372.2ms | Allocations: 15498)
+Completed 200 OK in 376ms (Views: 374.1ms | ActiveRecord: 1.0ms | Allocations: 15961)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 02:53:10 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (1.0ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 962)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 314.4ms | Allocations: 15537)
+Completed 200 OK in 318ms (Views: 316.5ms | ActiveRecord: 1.0ms | Allocations: 15999)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 02:53:25 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 3.5ms | Allocations: 1574)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1703)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.9ms | Allocations: 5351)
+Completed 200 OK in 51ms (Views: 48.6ms | ActiveRecord: 0.0ms | Allocations: 5824)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 02:56:41 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (0.9ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 962)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 309.7ms | Allocations: 15532)
+Completed 200 OK in 315ms (Views: 313.4ms | ActiveRecord: 0.9ms | Allocations: 15995)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 02:57:16 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (1.1ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 964)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 324.9ms | Allocations: 16535)
+Completed 200 OK in 329ms (Views: 326.8ms | ActiveRecord: 1.1ms | Allocations: 16998)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 02:58:08 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 2.8ms | Allocations: 1574)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1697)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.9ms | Allocations: 5359)
+Completed 200 OK in 44ms (Views: 43.2ms | ActiveRecord: 0.0ms | Allocations: 5835)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 02:59:59 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (1.0ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 962)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 377.7ms | Allocations: 15542)
+Completed 200 OK in 382ms (Views: 379.5ms | ActiveRecord: 1.0ms | Allocations: 16004)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 03:05:05 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (5.5ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 51.8ms | Allocations: 6109)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 369.0ms | Allocations: 21178)
+Completed 200 OK in 373ms (Views: 371.8ms | ActiveRecord: 23.5ms | Allocations: 21639)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 03:05:25 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (0.9ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 964)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 329.5ms | Allocations: 15066)
+Completed 200 OK in 334ms (Views: 332.2ms | ActiveRecord: 0.9ms | Allocations: 15530)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 03:06:11 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (1.5ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 962)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 298.7ms | Allocations: 17483)
+Completed 200 OK in 302ms (Views: 299.9ms | ActiveRecord: 1.5ms | Allocations: 17945)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 03:56:25 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 5.0ms | Allocations: 1574)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1706)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 74.9ms | Allocations: 5347)
+Completed 200 OK in 82ms (Views: 78.5ms | Allocations: 5823)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2869832675165108730)[0m
+  [1m[35m (7.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemoveAddressFromLocation (20230302042226)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (17.0ms)[0m  [1m[35mALTER TABLE "locations" DROP COLUMN "address"[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230302042226"]]
+  [1m[36mTRANSACTION (14.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (6.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(2869832675165108730)[0m
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2869832675165108730)[0m
+  [1m[35m (6.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddColumnToLocation (20230302043004)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (11.8ms)[0m  [1m[35mALTER TABLE "locations" ADD "stage" integer[0m
+  [1m[35m (1.3ms)[0m  [1m[35mALTER TABLE "locations" ADD "ink_name" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230302043004"]]
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (4.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(2869832675165108730)[0m
+  [1m[35m (4.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2869832675165108730)[0m
+  [1m[35m (7.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemoveEmailFromUsers (20230302044009)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.1ms)[0m  [1m[35mALTER TABLE "users" DROP COLUMN "email"[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230302044009"]]
+  [1m[36mTRANSACTION (6.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(2869832675165108730)[0m
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 05:14:04 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (7.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 7.2ms | Allocations: 1866)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 24.8ms | Allocations: 2007)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 97.3ms | Allocations: 5751)
+Completed 200 OK in 149ms (Views: 103.5ms | ActiveRecord: 0.0ms | Allocations: 10865)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 05:15:36 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 4.9ms | Allocations: 2149)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 12.7ms | Allocations: 2556)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.8ms | Allocations: 6498)
+Completed 200 OK in 57ms (Views: 54.7ms | ActiveRecord: 0.0ms | Allocations: 7965)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 05:20:55 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 10.1ms | Allocations: 2198)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 14.2ms | Allocations: 2598)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.2ms | Allocations: 6544)
+Completed 200 OK in 65ms (Views: 61.4ms | Allocations: 7967)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 05:23:59 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 10.2ms | Allocations: 2624)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 15.0ms | Allocations: 3024)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.0ms | Allocations: 6966)
+Completed 200 OK in 54ms (Views: 52.7ms | Allocations: 8388)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 05:24:56 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 9.6ms | Allocations: 2593)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 15.2ms | Allocations: 2998)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.6ms | Allocations: 6950)
+Completed 200 OK in 57ms (Views: 55.5ms | Allocations: 8379)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2869832675165108730)[0m
+  [1m[35m (5.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddStageToStocks (20230302054321)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (11.8ms)[0m  [1m[35mALTER TABLE "stocks" ADD "stage_id" bigint NOT NULL[0m
+  [1m[35m (40.1ms)[0m  [1m[35mCREATE INDEX "index_stocks_on_stage_id" ON "stocks" ("stage_id")[0m
+  [1m[35m (32.4ms)[0m  [1m[35mALTER TABLE "stocks" ADD CONSTRAINT "fk_rails_43bb901586"
+FOREIGN KEY ("stage_id")
+  REFERENCES "stages" ("id")
+[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(2869832675165108730)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2869832675165108730)[0m
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddStageToStocks (20230302054321)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.6ms)[0m  [1m[35mALTER TABLE "stocks" ADD "location_id" bigint NOT NULL[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(2869832675165108730)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2869832675165108730)[0m
+  [1m[35m (6.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddStageToStocks (20230302054321)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.3ms)[0m  [1m[35mALTER TABLE "stocks" ADD "stage" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (3.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230302054321"]]
+  [1m[36mTRANSACTION (9.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (6.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(2869832675165108730)[0m
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 07:52:27 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (8.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 9.7ms | Allocations: 2565)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 14.5ms | Allocations: 2971)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 79.7ms | Allocations: 6885)
+Completed 200 OK in 132ms (Views: 86.0ms | ActiveRecord: 0.0ms | Allocations: 12923)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 08:19:54 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 10.9ms | Allocations: 2451)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 14.9ms | Allocations: 2851)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 927.2ms | Allocations: 18948)
+Completed 200 OK in 935ms (Views: 932.1ms | Allocations: 20370)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 08:21:56 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 4.2ms | Allocations: 1813)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1933)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 351.3ms | Allocations: 18324)
+Completed 200 OK in 355ms (Views: 354.0ms | Allocations: 18843)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 08:23:01 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 4.2ms | Allocations: 1811)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1931)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 322.4ms | Allocations: 18220)
+Completed 200 OK in 326ms (Views: 324.9ms | Allocations: 18684)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 08:23:26 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 4.0ms | Allocations: 1811)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1931)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 324.4ms | Allocations: 20511)
+Completed 200 OK in 328ms (Views: 327.0ms | Allocations: 20975)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 08:24:34 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 7.3ms | Allocations: 1812)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1932)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 333.7ms | Allocations: 21141)
+Completed 200 OK in 338ms (Views: 336.8ms | Allocations: 21605)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 08:26:15 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 4.9ms | Allocations: 1815)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1935)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 367.5ms | Allocations: 19134)
+Completed 200 OK in 373ms (Views: 371.5ms | Allocations: 19599)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 08:29:14 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 3.2ms | Allocations: 1811)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1931)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 344.6ms | Allocations: 17660)
+Completed 200 OK in 348ms (Views: 347.3ms | Allocations: 18124)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 08:29:17 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 3.2ms | Allocations: 1811)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1931)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 46.0ms | Allocations: 5639)
+Completed 200 OK in 49ms (Views: 48.4ms | Allocations: 6103)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 09:25:13 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 4.5ms | Allocations: 1813)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1933)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /myapp/public/packs
+[Webpacker] Hash: 50918b56ca7f40b23f18
+Version: webpack 4.46.0
+Time: 6657ms
+Built at: 03/02/2023 9:25:40 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-0451a6cb62a359377156.js    124 KiB  application  [emitted] [immutable]  application
+js/application-0451a6cb62a359377156.js.map    135 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-0451a6cb62a359377156.js js/application-0451a6cb62a359377156.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 493 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 553 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 26756.0ms | Allocations: 87133)
+Completed 200 OK in 26761ms (Views: 26759.0ms | Allocations: 87598)
+
+
+Started GET "/stocks/" for 192.168.0.1 at 2023-03-02 12:13:40 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (13.7ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 93.2ms | Allocations: 6671)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 290.4ms | Allocations: 13879)
+Completed 200 OK in 302ms (Views: 293.6ms | ActiveRecord: 54.4ms | Allocations: 14534)
+
+
+Started GET "/stocks/" for 192.168.0.1 at 2023-03-02 12:45:58 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (5.2ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 54.2ms | Allocations: 6681)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 100.8ms | Allocations: 14285)
+Completed 200 OK in 111ms (Views: 108.2ms | ActiveRecord: 23.1ms | Allocations: 15653)
+
+
+Started GET "/stocks/" for 192.168.0.1 at 2023-03-02 13:18:23 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (10.8ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 69.3ms | Allocations: 6064)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12669.6ms | Allocations: 78531)
+Completed 200 OK in 12674ms (Views: 12672.1ms | ActiveRecord: 35.1ms | Allocations: 79044)
+
+
+Started GET "/stocks/" for 192.168.0.1 at 2023-03-02 13:19:49 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (0.9ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 964)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12411.6ms | Allocations: 77409)
+Completed 200 OK in 12415ms (Views: 12413.1ms | ActiveRecord: 0.9ms | Allocations: 77873)
+
+
+Started GET "/stocks/" for 192.168.0.1 at 2023-03-02 13:20:28 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (0.9ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 966)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11908.3ms | Allocations: 78010)
+Completed 200 OK in 11912ms (Views: 11910.2ms | ActiveRecord: 0.9ms | Allocations: 78472)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 13:20:48 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 8.6ms | Allocations: 2374)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 16.6ms | Allocations: 2746)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.6ms | Allocations: 10023)
+Completed 200 OK in 68ms (Views: 60.5ms | ActiveRecord: 0.0ms | Allocations: 10645)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 13:22:57 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 3.0ms | Allocations: 1813)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1933)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.6ms | Allocations: 9242)
+Completed 200 OK in 61ms (Views: 60.3ms | ActiveRecord: 0.0ms | Allocations: 9731)
+
+
+Started GET "/stocks/" for 192.168.0.1 at 2023-03-02 13:26:38 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (6.1ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 53.0ms | Allocations: 6735)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 92.7ms | Allocations: 14343)
+Completed 200 OK in 99ms (Views: 96.2ms | ActiveRecord: 24.0ms | Allocations: 15712)
+
+
+Started GET "/stocks/" for 192.168.0.1 at 2023-03-02 13:28:35 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (1.4ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 11.9ms | Allocations: 1459)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12046.2ms | Allocations: 80569)
+Completed 200 OK in 12052ms (Views: 12049.2ms | ActiveRecord: 1.4ms | Allocations: 81990)
+
+
+Started GET "/stocks/" for 192.168.0.1 at 2023-03-02 13:32:13 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (0.9ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 966)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11999.1ms | Allocations: 78423)
+Completed 200 OK in 12003ms (Views: 12001.3ms | ActiveRecord: 0.9ms | Allocations: 78939)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 13:41:51 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 8.5ms | Allocations: 2375)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 16.2ms | Allocations: 2764)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 71.2ms | Allocations: 10069)
+Completed 200 OK in 77ms (Views: 75.1ms | Allocations: 10689)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 13:44:21 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 5.2ms | Allocations: 1813)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1933)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11905.3ms | Allocations: 80862)
+Completed 200 OK in 11909ms (Views: 11908.0ms | Allocations: 81327)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 13:44:37 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 2.8ms | Allocations: 1815)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1935)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.5ms | Allocations: 9131)
+Completed 200 OK in 44ms (Views: 43.1ms | Allocations: 9595)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 13:45:09 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 3.6ms | Allocations: 1811)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1931)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.2ms | Allocations: 9127)
+Completed 200 OK in 46ms (Views: 44.8ms | Allocations: 9591)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 13:51:38 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 2.6ms | Allocations: 1811)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1931)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.7ms | Allocations: 9128)
+Completed 200 OK in 44ms (Views: 42.9ms | Allocations: 9593)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 13:51:42 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 2.6ms | Allocations: 1811)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1931)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.8ms | Allocations: 9130)
+Completed 200 OK in 45ms (Views: 44.4ms | Allocations: 9595)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 13:59:24 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 3.4ms | Allocations: 1815)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1935)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11848.7ms | Allocations: 78489)
+Completed 200 OK in 11852ms (Views: 11851.4ms | Allocations: 78953)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 14:00:10 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 2.8ms | Allocations: 1815)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1935)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12048.2ms | Allocations: 79451)
+Completed 200 OK in 12052ms (Views: 12051.3ms | Allocations: 79915)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 14:00:40 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 3.3ms | Allocations: 1815)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1935)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11991.2ms | Allocations: 81421)
+Completed 200 OK in 11995ms (Views: 11993.9ms | Allocations: 81885)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 14:01:20 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 2.9ms | Allocations: 1815)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1935)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11841.4ms | Allocations: 80831)
+Completed 200 OK in 11845ms (Views: 11844.2ms | Allocations: 81295)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 14:01:55 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 5.3ms | Allocations: 1815)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1935)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.7ms | Allocations: 9131)
+Completed 200 OK in 50ms (Views: 48.9ms | Allocations: 9595)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 14:03:59 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 6.6ms | Allocations: 2446)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 11.4ms | Allocations: 2852)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 60.3ms | Allocations: 10451)
+Completed 200 OK in 69ms (Views: 67.0ms | Allocations: 11824)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 14:04:48 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 6.3ms | Allocations: 2434)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 10.4ms | Allocations: 2838)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.4ms | Allocations: 10424)
+Completed 200 OK in 55ms (Views: 52.2ms | Allocations: 11852)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 14:05:42 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 6.3ms | Allocations: 2446)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 10.5ms | Allocations: 2846)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.6ms | Allocations: 10435)
+Completed 200 OK in 54ms (Views: 52.7ms | Allocations: 11858)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 14:09:43 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 5.8ms | Allocations: 1811)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1931)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11980.1ms | Allocations: 79612)
+Completed 200 OK in 11984ms (Views: 11982.8ms | Allocations: 80131)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 14:12:28 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 4.3ms | Allocations: 1815)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1935)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11913.9ms | Allocations: 79794)
+Completed 200 OK in 11919ms (Views: 11916.8ms | Allocations: 80258)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 14:18:20 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 7.0ms | Allocations: 2449)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 12.1ms | Allocations: 2855)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12006.1ms | Allocations: 81469)
+Completed 200 OK in 12012ms (Views: 12010.6ms | Allocations: 82841)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 14:19:06 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 4.7ms | Allocations: 1815)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1935)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11968.4ms | Allocations: 79006)
+Completed 200 OK in 11972ms (Views: 11971.1ms | Allocations: 79525)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 14:19:41 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 5.3ms | Allocations: 1816)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1936)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11791.4ms | Allocations: 78085)
+Completed 200 OK in 11795ms (Views: 11794.4ms | Allocations: 78549)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 14:24:31 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 8.1ms | Allocations: 2446)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 12.3ms | Allocations: 2852)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11835.1ms | Allocations: 81467)
+Completed 200 OK in 11844ms (Views: 11840.2ms | Allocations: 82839)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 14:26:27 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 3.4ms | Allocations: 1815)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1935)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.2ms | Allocations: 9158)
+Completed 200 OK in 49ms (Views: 47.9ms | Allocations: 9678)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 14:26:34 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 2.7ms | Allocations: 1811)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1931)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 43.2ms | Allocations: 9128)
+Completed 200 OK in 48ms (Views: 46.7ms | Allocations: 9592)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 14:26:46 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 5.1ms | Allocations: 2441)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 13.2ms | Allocations: 2849)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.6ms | Allocations: 10434)
+Completed 200 OK in 57ms (Views: 55.6ms | Allocations: 11807)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 14:28:18 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 7.4ms | Allocations: 2441)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 15.6ms | Allocations: 2842)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.0ms | Allocations: 10429)
+Completed 200 OK in 65ms (Views: 61.9ms | Allocations: 11852)
+
+
+Started GET "/stocks/" for 192.168.0.1 at 2023-03-02 14:29:03 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (16.5ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 103.6ms | Allocations: 6627)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 140.9ms | Allocations: 13862)
+Completed 200 OK in 149ms (Views: 144.3ms | ActiveRecord: 58.0ms | Allocations: 14509)
+
+
+Started GET "/stocks/" for 192.168.0.1 at 2023-03-02 14:30:33 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (0.9ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 964)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11862.5ms | Allocations: 80150)
+Completed 200 OK in 11866ms (Views: 11864.2ms | ActiveRecord: 0.9ms | Allocations: 80615)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 14:30:51 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 3.3ms | Allocations: 1815)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2013)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.4ms | Allocations: 9214)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.0ms | Allocations: 9700)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 14:31:27 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 2.6ms | Allocations: 1811)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1932)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11830.1ms | Allocations: 81394)
+Completed 200 OK in 11834ms (Views: 11832.8ms | ActiveRecord: 0.0ms | Allocations: 81861)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 14:31:56 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 3.0ms | Allocations: 1815)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1936)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11826.6ms | Allocations: 79017)
+Completed 200 OK in 11831ms (Views: 11829.9ms | ActiveRecord: 0.0ms | Allocations: 79484)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 14:32:33 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 5.1ms | Allocations: 1816)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1937)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12331.5ms | Allocations: 80868)
+Completed 200 OK in 12336ms (Views: 12334.8ms | ActiveRecord: 0.0ms | Allocations: 81335)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 14:33:00 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 3.0ms | Allocations: 1815)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1936)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11831.0ms | Allocations: 80001)
+Completed 200 OK in 11839ms (Views: 11837.0ms | ActiveRecord: 0.0ms | Allocations: 80469)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 14:33:44 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 2.8ms | Allocations: 1815)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1936)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11801.8ms | Allocations: 79516)
+Completed 200 OK in 11806ms (Views: 11804.7ms | ActiveRecord: 0.0ms | Allocations: 79984)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 14:34:08 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 3.4ms | Allocations: 1813)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1934)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12689.4ms | Allocations: 80918)
+Completed 200 OK in 12693ms (Views: 12692.6ms | ActiveRecord: 0.0ms | Allocations: 81386)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 14:35:19 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 6.9ms | Allocations: 2446)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 11.1ms | Allocations: 2853)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.6ms | Allocations: 10462)
+Completed 200 OK in 57ms (Views: 55.2ms | ActiveRecord: 0.0ms | Allocations: 11842)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 14:37:54 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 5.7ms | Allocations: 2442)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 12.6ms | Allocations: 2844)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12710.2ms | Allocations: 81370)
+Completed 200 OK in 12717ms (Views: 12715.4ms | Allocations: 82793)
+
+
+Started POST "/stocks" for 192.168.0.1 at 2023-03-02 14:38:38 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "stock"=>{"ink_name"=>"", "color_type"=>"", "location_id"=>"", "stage"=>"", "quantity"=>"", "user_id"=>""}, "commit"=>"登録"}
+[31mUnpermitted parameter: :stage[0m
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 5.3ms | Allocations: 3525)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 7.0ms | Allocations: 3654)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.6ms | Allocations: 10951)
+Completed 422 Unprocessable Entity in 242ms (Views: 43.3ms | ActiveRecord: 17.5ms | Allocations: 23649)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 14:39:43 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (5.6ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 13.9ms | Allocations: 1471)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.5ms | Allocations: 8679)
+Completed 200 OK in 56ms (Views: 48.6ms | ActiveRecord: 5.6ms | Allocations: 9344)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 14:39:47 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 4.0ms | Allocations: 1816)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1940)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.0ms | Allocations: 9254)
+Completed 200 OK in 59ms (Views: 57.8ms | ActiveRecord: 0.0ms | Allocations: 9739)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 14:39:53 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (1.6ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 12.0ms | Allocations: 976)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.6ms | Allocations: 8303)
+Completed 200 OK in 60ms (Views: 56.7ms | ActiveRecord: 1.6ms | Allocations: 8774)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 14:39:57 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 5.8ms | Allocations: 1812)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 9.1ms | Allocations: 1947)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.5ms | Allocations: 9235)
+Completed 200 OK in 65ms (Views: 63.3ms | ActiveRecord: 0.0ms | Allocations: 9709)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 14:40:02 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (1.6ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 1041)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.1ms | Allocations: 8265)
+Completed 200 OK in 49ms (Views: 46.3ms | ActiveRecord: 1.6ms | Allocations: 8743)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 14:40:55 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (0.9ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 964)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11893.6ms | Allocations: 81618)
+Completed 200 OK in 11897ms (Views: 11895.3ms | ActiveRecord: 0.9ms | Allocations: 82080)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 14:41:48 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (0.9ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:18
+  Rendered stocks/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 966)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11888.9ms | Allocations: 79967)
+Completed 200 OK in 11893ms (Views: 11891.0ms | ActiveRecord: 0.9ms | Allocations: 80429)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 14:46:39 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (0.9ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:19
+  Rendered stocks/index.html.erb within layouts/application (Duration: 9.4ms | Allocations: 1484)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.7ms | Allocations: 9118)
+Completed 200 OK in 58ms (Views: 55.7ms | ActiveRecord: 0.9ms | Allocations: 10492)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 14:47:34 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 5.4ms | Allocations: 2373)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 11.0ms | Allocations: 2751)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.6ms | Allocations: 10036)
+Completed 200 OK in 58ms (Views: 55.0ms | ActiveRecord: 0.0ms | Allocations: 10699)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 14:54:27 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (5.5ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:19
+  Rendered stocks/index.html.erb within layouts/application (Duration: 58.8ms | Allocations: 6235)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11972.7ms | Allocations: 84884)
+Completed 200 OK in 11990ms (Views: 11987.4ms | ActiveRecord: 28.9ms | Allocations: 85346)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 14:56:59 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (1.4ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:19
+  Rendered stocks/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 966)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11902.3ms | Allocations: 79420)
+Completed 200 OK in 11907ms (Views: 11904.0ms | ActiveRecord: 1.4ms | Allocations: 79882)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 14:59:03 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (1.0ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:19
+  Rendered stocks/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 966)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11833.8ms | Allocations: 79529)
+Completed 200 OK in 11838ms (Views: 11835.7ms | ActiveRecord: 1.0ms | Allocations: 79991)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 15:00:32 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 6.0ms | Allocations: 1816)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 10.9ms | Allocations: 1938)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.2ms | Allocations: 9267)
+Completed 200 OK in 61ms (Views: 58.2ms | ActiveRecord: 0.0ms | Allocations: 9744)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 15:03:14 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (0.8ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:19
+  Rendered stocks/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 966)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11837.1ms | Allocations: 78882)
+Completed 200 OK in 11841ms (Views: 11839.3ms | ActiveRecord: 0.8ms | Allocations: 79344)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 15:03:31 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 7.4ms | Allocations: 1816)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 10.9ms | Allocations: 1943)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 59.3ms | Allocations: 9265)
+Completed 200 OK in 66ms (Views: 64.0ms | ActiveRecord: 0.0ms | Allocations: 10154)
+
+
+Started GET "/stocks/new" for 192.168.0.1 at 2023-03-02 15:07:58 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/new.html.erb within layouts/application
+  Rendered stocks/_form.html.erb (Duration: 7.2ms | Allocations: 1812)
+  Rendered stocks/new.html.erb within layouts/application (Duration: 9.6ms | Allocations: 1946)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 82.7ms | Allocations: 9785)
+Completed 200 OK in 91ms (Views: 88.6ms | ActiveRecord: 0.0ms | Allocations: 10264)
+
+
+Started GET "/stocks" for 192.168.0.1 at 2023-03-02 15:08:02 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (1.4ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:19
+  Rendered stocks/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 987)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.6ms | Allocations: 8302)
+Completed 200 OK in 59ms (Views: 56.6ms | ActiveRecord: 1.4ms | Allocations: 8778)
+
+
