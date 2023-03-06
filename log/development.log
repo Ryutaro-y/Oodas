@@ -9265,3 +9265,1364 @@ Processing by StocksController#edit as HTML
 Completed 200 OK in 66ms (Views: 55.0ms | ActiveRecord: 3.1ms | Allocations: 11600)
 
 
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2869832675165108730)[0m
+  [1m[35m (7.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateInks (20230306013352)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (80.1ms)[0m  [1m[35mCREATE TABLE "inks" ("id" bigserial primary key, "name" character varying, "color_type" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230306013352"]]
+  [1m[36mTRANSACTION (8.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (5.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(2869832675165108730)[0m
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/stocks/" for 172.19.0.1 at 2023-03-06 03:24:08 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (7.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (17.7ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:19
+  Rendered stocks/index.html.erb within layouts/application (Duration: 44.8ms | Allocations: 7790)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6122.9ms | Allocations: 42461)
+Completed 200 OK in 6194ms (Views: 6112.1ms | ActiveRecord: 26.9ms | Allocations: 47453)
+
+
+Started GET "/inks" for 172.19.0.1 at 2023-03-06 03:24:29 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by InksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inks/index.html.erb within layouts/application
+  [1m[36mInk Load (6.6ms)[0m  [1m[34mSELECT "inks".* FROM "inks"[0m
+  ↳ app/views/inks/index.html.erb:15
+  Rendered inks/index.html.erb within layouts/application (Duration: 27.4ms | Allocations: 4725)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 149.9ms | Allocations: 13024)
+Completed 200 OK in 176ms (Views: 143.3ms | ActiveRecord: 10.4ms | Allocations: 15439)
+
+
+Started GET "/inks/1" for 172.19.0.1 at 2023-03-06 03:24:31 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by InksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mInk Load (0.9ms)[0m  [1m[34mSELECT "inks".* FROM "inks" WHERE "inks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/inks_controller.rb:64:in `set_ink'
+  [1m[36mCACHE Ink Load (0.0ms)[0m  [1m[34mSELECT "inks".* FROM "inks" WHERE "inks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/inks_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering inks/show.html.erb within layouts/application
+  Rendered inks/show.html.erb within layouts/application (Duration: 3.9ms | Allocations: 372)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.6ms | Allocations: 8630)
+Completed 200 OK in 69ms (Views: 51.3ms | ActiveRecord: 2.6ms | Allocations: 11527)
+
+
+Started GET "/inks" for 172.19.0.1 at 2023-03-06 03:26:28 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by InksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inks/index.html.erb within layouts/application
+  [1m[36mInk Load (1.0ms)[0m  [1m[34mSELECT "inks".* FROM "inks"[0m
+  ↳ app/views/inks/index.html.erb:15
+  Rendered inks/index.html.erb within layouts/application (Duration: 15.3ms | Allocations: 4643)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 60.9ms | Allocations: 12942)
+Completed 200 OK in 76ms (Views: 58.2ms | ActiveRecord: 5.9ms | Allocations: 14917)
+
+
+Started GET "/inks/1" for 172.19.0.1 at 2023-03-06 03:26:36 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by InksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mInk Load (1.3ms)[0m  [1m[34mSELECT "inks".* FROM "inks" WHERE "inks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/inks_controller.rb:64:in `set_ink'
+  [1m[36mCACHE Ink Load (0.0ms)[0m  [1m[34mSELECT "inks".* FROM "inks" WHERE "inks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/inks_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering inks/show.html.erb within layouts/application
+  Rendered inks/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.2ms | Allocations: 8309)
+Completed 200 OK in 61ms (Views: 44.4ms | ActiveRecord: 1.4ms | Allocations: 10118)
+
+
+Started GET "/inks/2" for 172.19.0.1 at 2023-03-06 03:26:39 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by InksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mInk Load (1.5ms)[0m  [1m[34mSELECT "inks".* FROM "inks" WHERE "inks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/inks_controller.rb:64:in `set_ink'
+  [1m[36mCACHE Ink Load (0.0ms)[0m  [1m[34mSELECT "inks".* FROM "inks" WHERE "inks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/inks_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering inks/show.html.erb within layouts/application
+  Rendered inks/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 131)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.2ms | Allocations: 8226)
+Completed 200 OK in 55ms (Views: 42.8ms | ActiveRecord: 1.5ms | Allocations: 9839)
+
+
+Started GET "/inks" for 172.19.0.1 at 2023-03-06 03:26:41 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by InksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inks/index.html.erb within layouts/application
+  [1m[36mInk Load (1.9ms)[0m  [1m[34mSELECT "inks".* FROM "inks"[0m
+  ↳ app/views/inks/index.html.erb:15
+  Rendered inks/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1347)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 46.7ms | Allocations: 9445)
+Completed 200 OK in 50ms (Views: 47.4ms | ActiveRecord: 1.9ms | Allocations: 9871)
+
+
+Started GET "/inks/1/edit" for 172.19.0.1 at 2023-03-06 03:26:42 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by InksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mInk Load (1.0ms)[0m  [1m[34mSELECT "inks".* FROM "inks" WHERE "inks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/inks_controller.rb:64:in `set_ink'
+  Rendering layout layouts/application.html.erb
+  Rendering inks/edit.html.erb within layouts/application
+  Rendered inks/_form.html.erb (Duration: 13.7ms | Allocations: 1508)
+  Rendered inks/edit.html.erb within layouts/application (Duration: 19.6ms | Allocations: 1885)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 58.3ms | Allocations: 10144)
+Completed 200 OK in 72ms (Views: 60.9ms | ActiveRecord: 1.0ms | Allocations: 11529)
+
+
+Started GET "/inks/2/edit" for 172.19.0.1 at 2023-03-06 03:26:46 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by InksController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mInk Load (0.8ms)[0m  [1m[34mSELECT "inks".* FROM "inks" WHERE "inks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/inks_controller.rb:64:in `set_ink'
+  Rendering layout layouts/application.html.erb
+  Rendering inks/edit.html.erb within layouts/application
+  Rendered inks/_form.html.erb (Duration: 1.2ms | Allocations: 639)
+  Rendered inks/edit.html.erb within layouts/application (Duration: 2.4ms | Allocations: 736)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.3ms | Allocations: 8858)
+Completed 200 OK in 50ms (Views: 44.4ms | ActiveRecord: 0.8ms | Allocations: 10149)
+
+
+Started GET "/inks/1" for 172.19.0.1 at 2023-03-06 03:33:07 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by InksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mInk Load (3.0ms)[0m  [1m[34mSELECT "inks".* FROM "inks" WHERE "inks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/inks_controller.rb:64:in `set_ink'
+  [1m[36mCACHE Ink Load (0.0ms)[0m  [1m[34mSELECT "inks".* FROM "inks" WHERE "inks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/inks_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering inks/show.html.erb within layouts/application
+  Rendered inks/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 43.7ms | Allocations: 8234)
+Completed 200 OK in 102ms (Views: 46.1ms | ActiveRecord: 20.8ms | Allocations: 14957)
+
+
+Started GET "/inks/1/edit" for 172.19.0.1 at 2023-03-06 03:33:09 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by InksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mInk Load (1.1ms)[0m  [1m[34mSELECT "inks".* FROM "inks" WHERE "inks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/inks_controller.rb:64:in `set_ink'
+  Rendering layout layouts/application.html.erb
+  Rendering inks/edit.html.erb within layouts/application
+  Rendered inks/_form.html.erb (Duration: 1.6ms | Allocations: 616)
+  Rendered inks/edit.html.erb within layouts/application (Duration: 3.1ms | Allocations: 709)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.2ms | Allocations: 8804)
+Completed 200 OK in 54ms (Views: 47.2ms | ActiveRecord: 1.1ms | Allocations: 10020)
+
+
+Started GET "/inks/new" for 172.19.0.1 at 2023-03-06 03:33:20 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by InksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inks/new.html.erb within layouts/application
+  Rendered inks/_form.html.erb (Duration: 1.5ms | Allocations: 546)
+  Rendered inks/new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 755)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.1ms | Allocations: 8928)
+Completed 200 OK in 59ms (Views: 57.1ms | ActiveRecord: 0.0ms | Allocations: 9528)
+
+
+Started GET "/inks/new" for 172.19.0.1 at 2023-03-06 03:34:21 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by InksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inks/new.html.erb within layouts/application
+  Rendered inks/_form.html.erb (Duration: 1.3ms | Allocations: 538)
+  Rendered inks/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 641)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.8ms | Allocations: 8832)
+Completed 200 OK in 58ms (Views: 57.1ms | ActiveRecord: 0.0ms | Allocations: 9241)
+
+
+  [1m[35m (6.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (8.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (800.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "stock-order_app_development"[0m
+  [1m[35m (711.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "stock-order_app_test"[0m
+  [1m[35m (3673.3ms)[0m  [1m[35mCREATE DATABASE "stock-order_app_development" ENCODING = 'unicode'[0m
+  [1m[35m (2760.3ms)[0m  [1m[35mCREATE DATABASE "stock-order_app_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "inks" CASCADE[0m
+  [1m[35m (76.4ms)[0m  [1m[35mCREATE TABLE "inks" ("id" bigserial primary key, "name" character varying, "color_type" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "locations" CASCADE[0m
+  [1m[35m (37.4ms)[0m  [1m[35mCREATE TABLE "locations" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "stage" integer, "ink_name" character varying)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "stocks" CASCADE[0m
+  [1m[35m (42.5ms)[0m  [1m[35mCREATE TABLE "stocks" ("id" bigserial primary key, "ink_name" character varying, "color_type" character varying, "quantity" integer, "user_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "stage" integer, "location_name" character varying)[0m
+  [1m[35m (14.4ms)[0m  [1m[35mCREATE INDEX "index_stocks_on_user_id" ON "stocks" ("user_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (36.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (27.7ms)[0m  [1m[35mALTER TABLE "stocks" ADD CONSTRAINT "fk_rails_f4b3894c0d"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (27.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (5.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20230306013352)[0m
+  [1m[35m (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20230302005327),
+(20230302005454),
+(20230302005955),
+(20230302042226),
+(20230302043004),
+(20230302044009),
+(20230302054321),
+(20230305143414),
+(20230305164945);
+
+[0m
+  [1m[35m (32.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (4.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (4.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-03-06 05:41:02.067429"], ["updated_at", "2023-03-06 05:41:02.067429"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "b2a88b4b680bfa3c198e9188344e3e540ffa6096"], ["created_at", "2023-03-06 05:41:02.089231"], ["updated_at", "2023-03-06 05:41:02.089231"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "inks" CASCADE[0m
+  [1m[35m (66.2ms)[0m  [1m[35mCREATE TABLE "inks" ("id" bigserial primary key, "name" character varying, "color_type" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "locations" CASCADE[0m
+  [1m[35m (35.8ms)[0m  [1m[35mCREATE TABLE "locations" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "stage" integer, "ink_name" character varying)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "stocks" CASCADE[0m
+  [1m[35m (39.9ms)[0m  [1m[35mCREATE TABLE "stocks" ("id" bigserial primary key, "ink_name" character varying, "color_type" character varying, "quantity" integer, "user_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "stage" integer, "location_name" character varying)[0m
+  [1m[35m (8.7ms)[0m  [1m[35mCREATE INDEX "index_stocks_on_user_id" ON "stocks" ("user_id")[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (38.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (21.3ms)[0m  [1m[35mALTER TABLE "stocks" ADD CONSTRAINT "fk_rails_f4b3894c0d"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (28.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (4.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20230306013352)[0m
+  [1m[35m (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20230302005327),
+(20230302005454),
+(20230302005955),
+(20230302042226),
+(20230302043004),
+(20230302044009),
+(20230302054321),
+(20230305143414),
+(20230305164945);
+
+[0m
+  [1m[35m (31.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (5.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-03-06 05:41:02.585013"], ["updated_at", "2023-03-06 05:41:02.585013"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (1.8ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2023-03-06 05:41:02.601969"], ["key", "environment"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "b2a88b4b680bfa3c198e9188344e3e540ffa6096"], ["created_at", "2023-03-06 05:41:02.614844"], ["updated_at", "2023-03-06 05:41:02.614844"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (5.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (4.0ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "K"], ["LIMIT", 1]]
+  [1m[36mInk Create (3.9ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "K"], ["color_type", "黒"], ["created_at", "2023-03-06 05:41:02.856901"], ["updated_at", "2023-03-06 05:41:02.856901"]]
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (2.1ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "白"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "白"], ["color_type", "白"], ["created_at", "2023-03-06 05:41:02.874283"], ["updated_at", "2023-03-06 05:41:02.874283"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "メジウム"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "メジウム"], ["color_type", "メジウム"], ["created_at", "2023-03-06 05:41:02.885877"], ["updated_at", "2023-03-06 05:41:02.885877"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "R100"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "R100"], ["color_type", "赤"], ["created_at", "2023-03-06 05:41:02.895801"], ["updated_at", "2023-03-06 05:41:02.895801"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "R110"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "R110"], ["color_type", "赤"], ["created_at", "2023-03-06 05:41:02.906442"], ["updated_at", "2023-03-06 05:41:02.906442"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "R120"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "R120"], ["color_type", "赤"], ["created_at", "2023-03-06 05:41:02.916309"], ["updated_at", "2023-03-06 05:41:02.916309"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "R130"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "R130"], ["color_type", "赤"], ["created_at", "2023-03-06 05:41:02.926129"], ["updated_at", "2023-03-06 05:41:02.926129"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "R140"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "R140"], ["color_type", "赤"], ["created_at", "2023-03-06 05:41:02.936703"], ["updated_at", "2023-03-06 05:41:02.936703"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "R160"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "R160"], ["color_type", "赤"], ["created_at", "2023-03-06 05:41:02.946681"], ["updated_at", "2023-03-06 05:41:02.946681"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "R170"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "R170"], ["color_type", "赤"], ["created_at", "2023-03-06 05:41:02.957405"], ["updated_at", "2023-03-06 05:41:02.957405"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "R180"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "R180"], ["color_type", "赤"], ["created_at", "2023-03-06 05:41:02.968042"], ["updated_at", "2023-03-06 05:41:02.968042"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "R220"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "R220"], ["color_type", "赤"], ["created_at", "2023-03-06 05:41:02.978207"], ["updated_at", "2023-03-06 05:41:02.978207"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "R240"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "R240"], ["color_type", "赤"], ["created_at", "2023-03-06 05:41:02.988541"], ["updated_at", "2023-03-06 05:41:02.988541"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "R260"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "R260"], ["color_type", "赤"], ["created_at", "2023-03-06 05:41:02.998573"], ["updated_at", "2023-03-06 05:41:02.998573"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "R270"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "R270"], ["color_type", "赤"], ["created_at", "2023-03-06 05:41:03.009132"], ["updated_at", "2023-03-06 05:41:03.009132"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "R280"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.5ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "R280"], ["color_type", "赤"], ["created_at", "2023-03-06 05:41:03.027546"], ["updated_at", "2023-03-06 05:41:03.027546"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "R800"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.5ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "R800"], ["color_type", "赤"], ["created_at", "2023-03-06 05:41:03.053912"], ["updated_at", "2023-03-06 05:41:03.053912"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "R810"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.5ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "R810"], ["color_type", "赤"], ["created_at", "2023-03-06 05:41:03.087694"], ["updated_at", "2023-03-06 05:41:03.087694"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "R820"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "R820"], ["color_type", "赤"], ["created_at", "2023-03-06 05:41:03.121201"], ["updated_at", "2023-03-06 05:41:03.121201"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "R830"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "R830"], ["color_type", "赤"], ["created_at", "2023-03-06 05:41:03.132807"], ["updated_at", "2023-03-06 05:41:03.132807"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "R840"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.5ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "R840"], ["color_type", "赤"], ["created_at", "2023-03-06 05:41:03.144265"], ["updated_at", "2023-03-06 05:41:03.144265"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "R850"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.5ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "R850"], ["color_type", "赤"], ["created_at", "2023-03-06 05:41:03.154721"], ["updated_at", "2023-03-06 05:41:03.154721"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "R860"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "R860"], ["color_type", "赤"], ["created_at", "2023-03-06 05:41:03.164872"], ["updated_at", "2023-03-06 05:41:03.164872"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "R870"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "R870"], ["color_type", "赤"], ["created_at", "2023-03-06 05:41:03.175467"], ["updated_at", "2023-03-06 05:41:03.175467"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "R880"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "R880"], ["color_type", "赤"], ["created_at", "2023-03-06 05:41:03.186917"], ["updated_at", "2023-03-06 05:41:03.186917"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "R890"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "R890"], ["color_type", "赤"], ["created_at", "2023-03-06 05:41:03.197264"], ["updated_at", "2023-03-06 05:41:03.197264"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "R900"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "R900"], ["color_type", "赤"], ["created_at", "2023-03-06 05:41:03.208205"], ["updated_at", "2023-03-06 05:41:03.208205"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "R910"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "R910"], ["color_type", "赤"], ["created_at", "2023-03-06 05:41:03.219041"], ["updated_at", "2023-03-06 05:41:03.219041"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "R920"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "R920"], ["color_type", "赤"], ["created_at", "2023-03-06 05:41:03.229804"], ["updated_at", "2023-03-06 05:41:03.229804"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "R930"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "R930"], ["color_type", "赤"], ["created_at", "2023-03-06 05:41:03.240986"], ["updated_at", "2023-03-06 05:41:03.240986"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B100"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B100"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.251562"], ["updated_at", "2023-03-06 05:41:03.251562"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B120"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.5ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B120"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.263974"], ["updated_at", "2023-03-06 05:41:03.263974"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B150"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B150"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.276048"], ["updated_at", "2023-03-06 05:41:03.276048"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B310"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B310"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.286271"], ["updated_at", "2023-03-06 05:41:03.286271"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B320"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.3ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B320"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.295919"], ["updated_at", "2023-03-06 05:41:03.295919"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B330"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B330"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.306476"], ["updated_at", "2023-03-06 05:41:03.306476"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B340"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B340"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.316634"], ["updated_at", "2023-03-06 05:41:03.316634"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B350"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.3ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B350"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.326915"], ["updated_at", "2023-03-06 05:41:03.326915"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B360"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B360"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.336865"], ["updated_at", "2023-03-06 05:41:03.336865"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B400"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B400"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.347962"], ["updated_at", "2023-03-06 05:41:03.347962"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B410"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.3ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B410"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.358080"], ["updated_at", "2023-03-06 05:41:03.358080"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B420"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B420"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.368233"], ["updated_at", "2023-03-06 05:41:03.368233"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B430"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B430"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.378611"], ["updated_at", "2023-03-06 05:41:03.378611"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B440"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B440"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.388917"], ["updated_at", "2023-03-06 05:41:03.388917"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B450"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B450"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.398968"], ["updated_at", "2023-03-06 05:41:03.398968"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B460"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B460"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.410704"], ["updated_at", "2023-03-06 05:41:03.410704"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B470"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B470"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.421388"], ["updated_at", "2023-03-06 05:41:03.421388"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B480"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B480"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.432460"], ["updated_at", "2023-03-06 05:41:03.432460"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B490"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B490"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.442903"], ["updated_at", "2023-03-06 05:41:03.442903"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B530"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B530"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.453388"], ["updated_at", "2023-03-06 05:41:03.453388"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B540"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.5ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B540"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.464686"], ["updated_at", "2023-03-06 05:41:03.464686"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B550"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.5ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B550"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.477555"], ["updated_at", "2023-03-06 05:41:03.477555"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B560"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.5ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B560"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.489552"], ["updated_at", "2023-03-06 05:41:03.489552"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B570"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B570"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.502364"], ["updated_at", "2023-03-06 05:41:03.502364"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B580"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B580"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.517757"], ["updated_at", "2023-03-06 05:41:03.517757"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B590"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B590"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.528807"], ["updated_at", "2023-03-06 05:41:03.528807"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B800"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B800"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.538848"], ["updated_at", "2023-03-06 05:41:03.538848"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B810"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.5ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B810"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.549728"], ["updated_at", "2023-03-06 05:41:03.549728"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B820"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B820"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.560486"], ["updated_at", "2023-03-06 05:41:03.560486"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B830"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B830"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.570640"], ["updated_at", "2023-03-06 05:41:03.570640"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B840"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B840"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.580834"], ["updated_at", "2023-03-06 05:41:03.580834"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B850"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B850"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.592388"], ["updated_at", "2023-03-06 05:41:03.592388"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B860"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.5ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B860"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.603973"], ["updated_at", "2023-03-06 05:41:03.603973"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B870"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B870"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.614117"], ["updated_at", "2023-03-06 05:41:03.614117"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "B880"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B880"], ["color_type", "青"], ["created_at", "2023-03-06 05:41:03.624544"], ["updated_at", "2023-03-06 05:41:03.624544"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "CCM黄"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "CCM黄"], ["color_type", "黄"], ["created_at", "2023-03-06 05:41:03.635585"], ["updated_at", "2023-03-06 05:41:03.635585"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "Y100"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Y100"], ["color_type", "黄"], ["created_at", "2023-03-06 05:41:03.645811"], ["updated_at", "2023-03-06 05:41:03.645811"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "Y120"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Y120"], ["color_type", "黄"], ["created_at", "2023-03-06 05:41:03.656189"], ["updated_at", "2023-03-06 05:41:03.656189"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "Y130"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Y130"], ["color_type", "黄"], ["created_at", "2023-03-06 05:41:03.666951"], ["updated_at", "2023-03-06 05:41:03.666951"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "Y150"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Y150"], ["color_type", "黄"], ["created_at", "2023-03-06 05:41:03.678467"], ["updated_at", "2023-03-06 05:41:03.678467"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "Y160"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Y160"], ["color_type", "黄"], ["created_at", "2023-03-06 05:41:03.688914"], ["updated_at", "2023-03-06 05:41:03.688914"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "Y170"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Y170"], ["color_type", "黄"], ["created_at", "2023-03-06 05:41:03.699160"], ["updated_at", "2023-03-06 05:41:03.699160"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "Y180"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Y180"], ["color_type", "黄"], ["created_at", "2023-03-06 05:41:03.710873"], ["updated_at", "2023-03-06 05:41:03.710873"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "Y240"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Y240"], ["color_type", "黄"], ["created_at", "2023-03-06 05:41:03.721801"], ["updated_at", "2023-03-06 05:41:03.721801"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "Y260"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Y260"], ["color_type", "黄"], ["created_at", "2023-03-06 05:41:03.732130"], ["updated_at", "2023-03-06 05:41:03.732130"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "Y280"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Y280"], ["color_type", "黄"], ["created_at", "2023-03-06 05:41:03.742327"], ["updated_at", "2023-03-06 05:41:03.742327"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "Y330"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.3ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Y330"], ["color_type", "黄"], ["created_at", "2023-03-06 05:41:03.753732"], ["updated_at", "2023-03-06 05:41:03.753732"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "Y340"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Y340"], ["color_type", "黄"], ["created_at", "2023-03-06 05:41:03.765066"], ["updated_at", "2023-03-06 05:41:03.765066"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "Y350"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Y350"], ["color_type", "黄"], ["created_at", "2023-03-06 05:41:03.775682"], ["updated_at", "2023-03-06 05:41:03.775682"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "Y360"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Y360"], ["color_type", "黄"], ["created_at", "2023-03-06 05:41:03.785911"], ["updated_at", "2023-03-06 05:41:03.785911"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "Y800"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Y800"], ["color_type", "黄"], ["created_at", "2023-03-06 05:41:03.796365"], ["updated_at", "2023-03-06 05:41:03.796365"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "Y820"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Y820"], ["color_type", "黄"], ["created_at", "2023-03-06 05:41:03.806458"], ["updated_at", "2023-03-06 05:41:03.806458"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "Y830"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Y830"], ["color_type", "黄"], ["created_at", "2023-03-06 05:41:03.816756"], ["updated_at", "2023-03-06 05:41:03.816756"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G100"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G100"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:03.828590"], ["updated_at", "2023-03-06 05:41:03.828590"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G130"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.5ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G130"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:03.841202"], ["updated_at", "2023-03-06 05:41:03.841202"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G150"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G150"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:03.853708"], ["updated_at", "2023-03-06 05:41:03.853708"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G170"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.5ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G170"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:03.865814"], ["updated_at", "2023-03-06 05:41:03.865814"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G180"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.5ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G180"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:03.879603"], ["updated_at", "2023-03-06 05:41:03.879603"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G220"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.6ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G220"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:03.894298"], ["updated_at", "2023-03-06 05:41:03.894298"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G240"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G240"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:03.906075"], ["updated_at", "2023-03-06 05:41:03.906075"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G250"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G250"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:03.918642"], ["updated_at", "2023-03-06 05:41:03.918642"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G260"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G260"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:03.930421"], ["updated_at", "2023-03-06 05:41:03.930421"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G270"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.6ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G270"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:03.950209"], ["updated_at", "2023-03-06 05:41:03.950209"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G280"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G280"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:03.960983"], ["updated_at", "2023-03-06 05:41:03.960983"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G330"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G330"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:03.971298"], ["updated_at", "2023-03-06 05:41:03.971298"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G340"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G340"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:03.981611"], ["updated_at", "2023-03-06 05:41:03.981611"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G350"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.5ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G350"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:03.993886"], ["updated_at", "2023-03-06 05:41:03.993886"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G400"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G400"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:04.006266"], ["updated_at", "2023-03-06 05:41:04.006266"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G440"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G440"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:04.017335"], ["updated_at", "2023-03-06 05:41:04.017335"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G450"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G450"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:04.030379"], ["updated_at", "2023-03-06 05:41:04.030379"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G470"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G470"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:04.040788"], ["updated_at", "2023-03-06 05:41:04.040788"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G480"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.5ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G480"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:04.052134"], ["updated_at", "2023-03-06 05:41:04.052134"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G500"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G500"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:04.062506"], ["updated_at", "2023-03-06 05:41:04.062506"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G530"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G530"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:04.073272"], ["updated_at", "2023-03-06 05:41:04.073272"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G540"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G540"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:04.084036"], ["updated_at", "2023-03-06 05:41:04.084036"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G550"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G550"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:04.095046"], ["updated_at", "2023-03-06 05:41:04.095046"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G570"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G570"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:04.106866"], ["updated_at", "2023-03-06 05:41:04.106866"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G580"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G580"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:04.117035"], ["updated_at", "2023-03-06 05:41:04.117035"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G590"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.5ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G590"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:04.128464"], ["updated_at", "2023-03-06 05:41:04.128464"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G600"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G600"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:04.140113"], ["updated_at", "2023-03-06 05:41:04.140113"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G660"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.3ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G660"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:04.150675"], ["updated_at", "2023-03-06 05:41:04.150675"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G800"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G800"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:04.161497"], ["updated_at", "2023-03-06 05:41:04.161497"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G810"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G810"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:04.171540"], ["updated_at", "2023-03-06 05:41:04.171540"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G820"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G820"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:04.181723"], ["updated_at", "2023-03-06 05:41:04.181723"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G830"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.5ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G830"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:04.193357"], ["updated_at", "2023-03-06 05:41:04.193357"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G850"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G850"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:04.204689"], ["updated_at", "2023-03-06 05:41:04.204689"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G860"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G860"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:04.215759"], ["updated_at", "2023-03-06 05:41:04.215759"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G870"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.5ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G870"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:04.226568"], ["updated_at", "2023-03-06 05:41:04.226568"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G880"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G880"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:04.237402"], ["updated_at", "2023-03-06 05:41:04.237402"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "G900"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "G900"], ["color_type", "緑"], ["created_at", "2023-03-06 05:41:04.247840"], ["updated_at", "2023-03-06 05:41:04.247840"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "V120"], ["LIMIT", 1]]
+  [1m[36mInk Create (11.5ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "V120"], ["color_type", "紫"], ["created_at", "2023-03-06 05:41:04.258406"], ["updated_at", "2023-03-06 05:41:04.258406"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "V150"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "V150"], ["color_type", "紫"], ["created_at", "2023-03-06 05:41:04.282073"], ["updated_at", "2023-03-06 05:41:04.282073"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "V170"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "V170"], ["color_type", "紫"], ["created_at", "2023-03-06 05:41:04.293204"], ["updated_at", "2023-03-06 05:41:04.293204"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "V180"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.5ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "V180"], ["color_type", "紫"], ["created_at", "2023-03-06 05:41:04.303431"], ["updated_at", "2023-03-06 05:41:04.303431"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "V220"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "V220"], ["color_type", "紫"], ["created_at", "2023-03-06 05:41:04.313943"], ["updated_at", "2023-03-06 05:41:04.313943"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "V240"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "V240"], ["color_type", "紫"], ["created_at", "2023-03-06 05:41:04.323994"], ["updated_at", "2023-03-06 05:41:04.323994"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "V250"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "V250"], ["color_type", "紫"], ["created_at", "2023-03-06 05:41:04.335821"], ["updated_at", "2023-03-06 05:41:04.335821"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "V260"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "V260"], ["color_type", "紫"], ["created_at", "2023-03-06 05:41:04.346507"], ["updated_at", "2023-03-06 05:41:04.346507"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "V270"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.3ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "V270"], ["color_type", "紫"], ["created_at", "2023-03-06 05:41:04.357491"], ["updated_at", "2023-03-06 05:41:04.357491"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "V280"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "V280"], ["color_type", "紫"], ["created_at", "2023-03-06 05:41:04.368435"], ["updated_at", "2023-03-06 05:41:04.368435"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "V330"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "V330"], ["color_type", "紫"], ["created_at", "2023-03-06 05:41:04.379719"], ["updated_at", "2023-03-06 05:41:04.379719"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "V350"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "V350"], ["color_type", "紫"], ["created_at", "2023-03-06 05:41:04.390394"], ["updated_at", "2023-03-06 05:41:04.390394"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "V360"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "V360"], ["color_type", "紫"], ["created_at", "2023-03-06 05:41:04.400785"], ["updated_at", "2023-03-06 05:41:04.400785"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "V370"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "V370"], ["color_type", "紫"], ["created_at", "2023-03-06 05:41:04.411310"], ["updated_at", "2023-03-06 05:41:04.411310"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "V800"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "V800"], ["color_type", "紫"], ["created_at", "2023-03-06 05:41:04.422107"], ["updated_at", "2023-03-06 05:41:04.422107"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "V830"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "V830"], ["color_type", "紫"], ["created_at", "2023-03-06 05:41:04.433682"], ["updated_at", "2023-03-06 05:41:04.433682"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "V850"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.5ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "V850"], ["color_type", "紫"], ["created_at", "2023-03-06 05:41:04.446791"], ["updated_at", "2023-03-06 05:41:04.446791"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "V880"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "V880"], ["color_type", "紫"], ["created_at", "2023-03-06 05:41:04.457847"], ["updated_at", "2023-03-06 05:41:04.457847"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "P100"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "P100"], ["color_type", "ピンク"], ["created_at", "2023-03-06 05:41:04.468306"], ["updated_at", "2023-03-06 05:41:04.468306"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "P120"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "P120"], ["color_type", "ピンク"], ["created_at", "2023-03-06 05:41:04.478772"], ["updated_at", "2023-03-06 05:41:04.478772"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "P130"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "P130"], ["color_type", "ピンク"], ["created_at", "2023-03-06 05:41:04.489620"], ["updated_at", "2023-03-06 05:41:04.489620"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "P150"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "P150"], ["color_type", "ピンク"], ["created_at", "2023-03-06 05:41:04.499698"], ["updated_at", "2023-03-06 05:41:04.499698"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "P160"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "P160"], ["color_type", "ピンク"], ["created_at", "2023-03-06 05:41:04.509956"], ["updated_at", "2023-03-06 05:41:04.509956"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "P180"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "P180"], ["color_type", "ピンク"], ["created_at", "2023-03-06 05:41:04.520567"], ["updated_at", "2023-03-06 05:41:04.520567"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "P200"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "P200"], ["color_type", "ピンク"], ["created_at", "2023-03-06 05:41:04.531851"], ["updated_at", "2023-03-06 05:41:04.531851"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "P220"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "P220"], ["color_type", "ピンク"], ["created_at", "2023-03-06 05:41:04.542599"], ["updated_at", "2023-03-06 05:41:04.542599"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "P240"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "P240"], ["color_type", "ピンク"], ["created_at", "2023-03-06 05:41:04.552908"], ["updated_at", "2023-03-06 05:41:04.552908"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "P260"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "P260"], ["color_type", "ピンク"], ["created_at", "2023-03-06 05:41:04.563872"], ["updated_at", "2023-03-06 05:41:04.563872"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "P280"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "P280"], ["color_type", "ピンク"], ["created_at", "2023-03-06 05:41:04.574467"], ["updated_at", "2023-03-06 05:41:04.574467"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "P300"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "P300"], ["color_type", "ピンク"], ["created_at", "2023-03-06 05:41:04.584664"], ["updated_at", "2023-03-06 05:41:04.584664"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "P310"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "P310"], ["color_type", "ピンク"], ["created_at", "2023-03-06 05:41:04.595471"], ["updated_at", "2023-03-06 05:41:04.595471"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "P330"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "P330"], ["color_type", "ピンク"], ["created_at", "2023-03-06 05:41:04.606718"], ["updated_at", "2023-03-06 05:41:04.606718"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "P340"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "P340"], ["color_type", "ピンク"], ["created_at", "2023-03-06 05:41:04.617852"], ["updated_at", "2023-03-06 05:41:04.617852"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "P350"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "P350"], ["color_type", "ピンク"], ["created_at", "2023-03-06 05:41:04.629221"], ["updated_at", "2023-03-06 05:41:04.629221"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "P360"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "P360"], ["color_type", "ピンク"], ["created_at", "2023-03-06 05:41:04.639832"], ["updated_at", "2023-03-06 05:41:04.639832"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "P380"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "P380"], ["color_type", "ピンク"], ["created_at", "2023-03-06 05:41:04.650341"], ["updated_at", "2023-03-06 05:41:04.650341"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "P430"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "P430"], ["color_type", "ピンク"], ["created_at", "2023-03-06 05:41:04.660995"], ["updated_at", "2023-03-06 05:41:04.660995"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "P440"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "P440"], ["color_type", "ピンク"], ["created_at", "2023-03-06 05:41:04.671684"], ["updated_at", "2023-03-06 05:41:04.671684"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "P450"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.5ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "P450"], ["color_type", "ピンク"], ["created_at", "2023-03-06 05:41:04.683375"], ["updated_at", "2023-03-06 05:41:04.683375"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "P460"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "P460"], ["color_type", "ピンク"], ["created_at", "2023-03-06 05:41:04.694340"], ["updated_at", "2023-03-06 05:41:04.694340"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "P480"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "P480"], ["color_type", "ピンク"], ["created_at", "2023-03-06 05:41:04.705307"], ["updated_at", "2023-03-06 05:41:04.705307"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "P530"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "P530"], ["color_type", "ピンク"], ["created_at", "2023-03-06 05:41:04.715937"], ["updated_at", "2023-03-06 05:41:04.715937"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "P540"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "P540"], ["color_type", "ピンク"], ["created_at", "2023-03-06 05:41:04.726511"], ["updated_at", "2023-03-06 05:41:04.726511"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "P550"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "P550"], ["color_type", "ピンク"], ["created_at", "2023-03-06 05:41:04.737035"], ["updated_at", "2023-03-06 05:41:04.737035"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "P560"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "P560"], ["color_type", "ピンク"], ["created_at", "2023-03-06 05:41:04.747971"], ["updated_at", "2023-03-06 05:41:04.747971"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "P570"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "P570"], ["color_type", "ピンク"], ["created_at", "2023-03-06 05:41:04.758445"], ["updated_at", "2023-03-06 05:41:04.758445"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "P580"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "P580"], ["color_type", "ピンク"], ["created_at", "2023-03-06 05:41:04.770054"], ["updated_at", "2023-03-06 05:41:04.770054"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "P590"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.5ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "P590"], ["color_type", "ピンク"], ["created_at", "2023-03-06 05:41:04.780333"], ["updated_at", "2023-03-06 05:41:04.780333"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "S100"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "S100"], ["color_type", "茶"], ["created_at", "2023-03-06 05:41:04.790396"], ["updated_at", "2023-03-06 05:41:04.790396"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "S150"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "S150"], ["color_type", "茶"], ["created_at", "2023-03-06 05:41:04.800634"], ["updated_at", "2023-03-06 05:41:04.800634"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "S160"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "S160"], ["color_type", "茶"], ["created_at", "2023-03-06 05:41:04.811368"], ["updated_at", "2023-03-06 05:41:04.811368"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "S170"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "S170"], ["color_type", "茶"], ["created_at", "2023-03-06 05:41:04.821884"], ["updated_at", "2023-03-06 05:41:04.821884"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "S180"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "S180"], ["color_type", "茶"], ["created_at", "2023-03-06 05:41:04.833025"], ["updated_at", "2023-03-06 05:41:04.833025"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "S200"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "S200"], ["color_type", "茶"], ["created_at", "2023-03-06 05:41:04.844029"], ["updated_at", "2023-03-06 05:41:04.844029"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "S220"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "S220"], ["color_type", "茶"], ["created_at", "2023-03-06 05:41:04.854347"], ["updated_at", "2023-03-06 05:41:04.854347"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "S230"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "S230"], ["color_type", "茶"], ["created_at", "2023-03-06 05:41:04.865173"], ["updated_at", "2023-03-06 05:41:04.865173"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "S240"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "S240"], ["color_type", "茶"], ["created_at", "2023-03-06 05:41:04.875585"], ["updated_at", "2023-03-06 05:41:04.875585"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "S250"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "S250"], ["color_type", "茶"], ["created_at", "2023-03-06 05:41:04.886208"], ["updated_at", "2023-03-06 05:41:04.886208"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "S260"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "S260"], ["color_type", "茶"], ["created_at", "2023-03-06 05:41:04.897123"], ["updated_at", "2023-03-06 05:41:04.897123"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "S270"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "S270"], ["color_type", "茶"], ["created_at", "2023-03-06 05:41:04.908509"], ["updated_at", "2023-03-06 05:41:04.908509"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "S280"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "S280"], ["color_type", "茶"], ["created_at", "2023-03-06 05:41:04.920240"], ["updated_at", "2023-03-06 05:41:04.920240"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "S800"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "S800"], ["color_type", "茶"], ["created_at", "2023-03-06 05:41:04.932000"], ["updated_at", "2023-03-06 05:41:04.932000"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "S810"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "S810"], ["color_type", "茶"], ["created_at", "2023-03-06 05:41:04.942810"], ["updated_at", "2023-03-06 05:41:04.942810"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "S820"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "S820"], ["color_type", "茶"], ["created_at", "2023-03-06 05:41:04.954071"], ["updated_at", "2023-03-06 05:41:04.954071"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "S830"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "S830"], ["color_type", "茶"], ["created_at", "2023-03-06 05:41:04.964400"], ["updated_at", "2023-03-06 05:41:04.964400"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "S840"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "S840"], ["color_type", "茶"], ["created_at", "2023-03-06 05:41:04.975191"], ["updated_at", "2023-03-06 05:41:04.975191"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "S850"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "S850"], ["color_type", "茶"], ["created_at", "2023-03-06 05:41:04.985974"], ["updated_at", "2023-03-06 05:41:04.985974"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "S860"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "S860"], ["color_type", "茶"], ["created_at", "2023-03-06 05:41:04.996396"], ["updated_at", "2023-03-06 05:41:04.996396"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "S870"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "S870"], ["color_type", "茶"], ["created_at", "2023-03-06 05:41:05.008222"], ["updated_at", "2023-03-06 05:41:05.008222"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "S880"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.5ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "S880"], ["color_type", "茶"], ["created_at", "2023-03-06 05:41:05.019132"], ["updated_at", "2023-03-06 05:41:05.019132"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "K100"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "K100"], ["color_type", "黄土"], ["created_at", "2023-03-06 05:41:05.029559"], ["updated_at", "2023-03-06 05:41:05.029559"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "K130"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "K130"], ["color_type", "黄土"], ["created_at", "2023-03-06 05:41:05.040394"], ["updated_at", "2023-03-06 05:41:05.040394"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "K150"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "K150"], ["color_type", "黄土"], ["created_at", "2023-03-06 05:41:05.050504"], ["updated_at", "2023-03-06 05:41:05.050504"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "K180"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "K180"], ["color_type", "黄土"], ["created_at", "2023-03-06 05:41:05.060344"], ["updated_at", "2023-03-06 05:41:05.060344"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "K220"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.3ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "K220"], ["color_type", "黄土"], ["created_at", "2023-03-06 05:41:05.071167"], ["updated_at", "2023-03-06 05:41:05.071167"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "K240"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "K240"], ["color_type", "黄土"], ["created_at", "2023-03-06 05:41:05.082101"], ["updated_at", "2023-03-06 05:41:05.082101"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "K250"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "K250"], ["color_type", "黄土"], ["created_at", "2023-03-06 05:41:05.093117"], ["updated_at", "2023-03-06 05:41:05.093117"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "K260"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "K260"], ["color_type", "黄土"], ["created_at", "2023-03-06 05:41:05.103882"], ["updated_at", "2023-03-06 05:41:05.103882"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "K280"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "K280"], ["color_type", "黄土"], ["created_at", "2023-03-06 05:41:05.114019"], ["updated_at", "2023-03-06 05:41:05.114019"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "K800"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "K800"], ["color_type", "黄土"], ["created_at", "2023-03-06 05:41:05.124315"], ["updated_at", "2023-03-06 05:41:05.124315"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "K830"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "K830"], ["color_type", "黄土"], ["created_at", "2023-03-06 05:41:05.135082"], ["updated_at", "2023-03-06 05:41:05.135082"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "K850"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.5ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "K850"], ["color_type", "黄土"], ["created_at", "2023-03-06 05:41:05.145547"], ["updated_at", "2023-03-06 05:41:05.145547"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "H100"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "H100"], ["color_type", "グレー"], ["created_at", "2023-03-06 05:41:05.156844"], ["updated_at", "2023-03-06 05:41:05.156844"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "H110"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "H110"], ["color_type", "グレー"], ["created_at", "2023-03-06 05:41:05.167714"], ["updated_at", "2023-03-06 05:41:05.167714"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "H120"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "H120"], ["color_type", "グレー"], ["created_at", "2023-03-06 05:41:05.178267"], ["updated_at", "2023-03-06 05:41:05.178267"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "H150"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "H150"], ["color_type", "グレー"], ["created_at", "2023-03-06 05:41:05.188674"], ["updated_at", "2023-03-06 05:41:05.188674"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "H160"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "H160"], ["color_type", "グレー"], ["created_at", "2023-03-06 05:41:05.200522"], ["updated_at", "2023-03-06 05:41:05.200522"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "H170"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "H170"], ["color_type", "グレー"], ["created_at", "2023-03-06 05:41:05.211128"], ["updated_at", "2023-03-06 05:41:05.211128"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "H180"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.5ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "H180"], ["color_type", "グレー"], ["created_at", "2023-03-06 05:41:05.222055"], ["updated_at", "2023-03-06 05:41:05.222055"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "H220"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.5ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "H220"], ["color_type", "グレー"], ["created_at", "2023-03-06 05:41:05.233709"], ["updated_at", "2023-03-06 05:41:05.233709"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "H240"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "H240"], ["color_type", "グレー"], ["created_at", "2023-03-06 05:41:05.244780"], ["updated_at", "2023-03-06 05:41:05.244780"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "H250"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "H250"], ["color_type", "グレー"], ["created_at", "2023-03-06 05:41:05.256707"], ["updated_at", "2023-03-06 05:41:05.256707"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "H260"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "H260"], ["color_type", "グレー"], ["created_at", "2023-03-06 05:41:05.267349"], ["updated_at", "2023-03-06 05:41:05.267349"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "H270"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "H270"], ["color_type", "グレー"], ["created_at", "2023-03-06 05:41:05.278701"], ["updated_at", "2023-03-06 05:41:05.278701"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "H280"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.3ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "H280"], ["color_type", "グレー"], ["created_at", "2023-03-06 05:41:05.288886"], ["updated_at", "2023-03-06 05:41:05.288886"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "H310"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "H310"], ["color_type", "グレー"], ["created_at", "2023-03-06 05:41:05.299278"], ["updated_at", "2023-03-06 05:41:05.299278"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "H320"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "H320"], ["color_type", "グレー"], ["created_at", "2023-03-06 05:41:05.309956"], ["updated_at", "2023-03-06 05:41:05.309956"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "H330"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "H330"], ["color_type", "グレー"], ["created_at", "2023-03-06 05:41:05.320922"], ["updated_at", "2023-03-06 05:41:05.320922"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "H800"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.5ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "H800"], ["color_type", "グレー"], ["created_at", "2023-03-06 05:41:05.332577"], ["updated_at", "2023-03-06 05:41:05.332577"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "H810"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "H810"], ["color_type", "グレー"], ["created_at", "2023-03-06 05:41:05.343351"], ["updated_at", "2023-03-06 05:41:05.343351"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "H820"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "H820"], ["color_type", "グレー"], ["created_at", "2023-03-06 05:41:05.353935"], ["updated_at", "2023-03-06 05:41:05.353935"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "H830"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.5ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "H830"], ["color_type", "グレー"], ["created_at", "2023-03-06 05:41:05.364354"], ["updated_at", "2023-03-06 05:41:05.364354"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "H850"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "H850"], ["color_type", "グレー"], ["created_at", "2023-03-06 05:41:05.374443"], ["updated_at", "2023-03-06 05:41:05.374443"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "H880"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.5ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "H880"], ["color_type", "グレー"], ["created_at", "2023-03-06 05:41:05.385073"], ["updated_at", "2023-03-06 05:41:05.385073"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "赤金"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "赤金"], ["color_type", "金"], ["created_at", "2023-03-06 05:41:05.395765"], ["updated_at", "2023-03-06 05:41:05.395765"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "青金"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "青金"], ["color_type", "金"], ["created_at", "2023-03-06 05:41:05.407152"], ["updated_at", "2023-03-06 05:41:05.407152"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "シルバー"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.5ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "シルバー"], ["color_type", "銀"], ["created_at", "2023-03-06 05:41:05.418437"], ["updated_at", "2023-03-06 05:41:05.418437"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "蛍光赤"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "蛍光赤"], ["color_type", "蛍光"], ["created_at", "2023-03-06 05:41:05.429265"], ["updated_at", "2023-03-06 05:41:05.429265"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "蛍光黄"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "蛍光黄"], ["color_type", "蛍光"], ["created_at", "2023-03-06 05:41:05.439969"], ["updated_at", "2023-03-06 05:41:05.439969"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "蛍光緑"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "蛍光緑"], ["color_type", "蛍光"], ["created_at", "2023-03-06 05:41:05.450870"], ["updated_at", "2023-03-06 05:41:05.450870"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "蛍光橙"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "蛍光橙"], ["color_type", "蛍光"], ["created_at", "2023-03-06 05:41:05.461591"], ["updated_at", "2023-03-06 05:41:05.461591"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInk Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "inks" WHERE "inks"."name" = $1 LIMIT $2[0m  [["name", "蛍光ピンク"], ["LIMIT", 1]]
+  [1m[36mInk Create (0.4ms)[0m  [1m[32mINSERT INTO "inks" ("name", "color_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "蛍光ピンク"], ["color_type", "蛍光"], ["created_at", "2023-03-06 05:41:05.472335"], ["updated_at", "2023-03-06 05:41:05.472335"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2869832675165108730)[0m
+  [1m[35m (4.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(2869832675165108730)[0m
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/inks" for 172.19.0.1 at 2023-03-06 05:41:52 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by InksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inks/index.html.erb within layouts/application
+  [1m[36mInk Load (5.0ms)[0m  [1m[34mSELECT "inks".* FROM "inks"[0m
+  ↳ app/views/inks/index.html.erb:15
+  Rendered inks/index.html.erb within layouts/application (Duration: 91.1ms | Allocations: 44490)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 265.0ms | Allocations: 52815)
+Completed 200 OK in 282ms (Views: 268.9ms | ActiveRecord: 21.3ms | Allocations: 54771)
+
+
+Started GET "/inks/1" for 172.19.0.1 at 2023-03-06 05:42:28 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by InksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mInk Load (1.5ms)[0m  [1m[34mSELECT "inks".* FROM "inks" WHERE "inks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/inks_controller.rb:64:in `set_ink'
+  [1m[36mCACHE Ink Load (0.0ms)[0m  [1m[34mSELECT "inks".* FROM "inks" WHERE "inks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/inks_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering inks/show.html.erb within layouts/application
+  Rendered inks/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.4ms | Allocations: 8230)
+Completed 200 OK in 68ms (Views: 51.2ms | ActiveRecord: 2.5ms | Allocations: 10277)
+
+
+Started GET "/inks/2" for 172.19.0.1 at 2023-03-06 05:42:31 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by InksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mInk Load (0.9ms)[0m  [1m[34mSELECT "inks".* FROM "inks" WHERE "inks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/inks_controller.rb:64:in `set_ink'
+  [1m[36mCACHE Ink Load (0.0ms)[0m  [1m[34mSELECT "inks".* FROM "inks" WHERE "inks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/inks_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering inks/show.html.erb within layouts/application
+  Rendered inks/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 131)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.9ms | Allocations: 8253)
+Completed 200 OK in 56ms (Views: 44.5ms | ActiveRecord: 0.9ms | Allocations: 9868)
+
+
+Started GET "/inks/2/edit" for 172.19.0.1 at 2023-03-06 05:42:33 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by InksController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mInk Load (1.3ms)[0m  [1m[34mSELECT "inks".* FROM "inks" WHERE "inks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/inks_controller.rb:64:in `set_ink'
+  Rendering layout layouts/application.html.erb
+  Rendering inks/edit.html.erb within layouts/application
+  Rendered inks/_form.html.erb (Duration: 1.9ms | Allocations: 700)
+  Rendered inks/edit.html.erb within layouts/application (Duration: 3.6ms | Allocations: 800)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.0ms | Allocations: 8894)
+Completed 200 OK in 53ms (Views: 44.5ms | ActiveRecord: 1.3ms | Allocations: 10095)
+
+
+Started GET "/locations" for 172.19.0.1 at 2023-03-06 05:45:07 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (5.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:16
+  Rendered locations/index.html.erb within layouts/application (Duration: 13.9ms | Allocations: 1515)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 59.1ms | Allocations: 9813)
+Completed 200 OK in 101ms (Views: 59.1ms | ActiveRecord: 5.2ms | Allocations: 12279)
+
+
+Started GET "/inks" for 172.19.0.1 at 2023-03-06 05:48:51 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by InksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inks/index.html.erb within layouts/application
+  [1m[36mInk Load (1.2ms)[0m  [1m[34mSELECT "inks".* FROM "inks"[0m
+  ↳ app/views/inks/index.html.erb:15
+  Rendered inks/index.html.erb within layouts/application (Duration: 43.5ms | Allocations: 36708)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 109.9ms | Allocations: 44830)
+Completed 200 OK in 113ms (Views: 111.4ms | ActiveRecord: 1.2ms | Allocations: 45286)
+
+
+Started GET "/inks" for 172.19.0.1 at 2023-03-06 05:48:52 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by InksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inks/index.html.erb within layouts/application
+  [1m[36mInk Load (2.5ms)[0m  [1m[34mSELECT "inks".* FROM "inks"[0m
+  ↳ app/views/inks/index.html.erb:15
+  Rendered inks/index.html.erb within layouts/application (Duration: 67.3ms | Allocations: 36685)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 110.3ms | Allocations: 44806)
+Completed 200 OK in 115ms (Views: 111.4ms | ActiveRecord: 2.5ms | Allocations: 45205)
+
+
+Started GET "/inks/new" for 172.19.0.1 at 2023-03-06 05:48:55 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by InksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inks/new.html.erb within layouts/application
+  Rendered inks/_form.html.erb (Duration: 1.8ms | Allocations: 575)
+  Rendered inks/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 685)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.2ms | Allocations: 8862)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.0ms | Allocations: 9280)
+
+
+Started GET "/inks/1" for 172.19.0.1 at 2023-03-06 05:49:25 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by InksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mInk Load (3.2ms)[0m  [1m[34mSELECT "inks".* FROM "inks" WHERE "inks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/inks_controller.rb:64:in `set_ink'
+  [1m[36mCACHE Ink Load (0.0ms)[0m  [1m[34mSELECT "inks".* FROM "inks" WHERE "inks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/inks_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering inks/show.html.erb within layouts/application
+  Rendered inks/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 131)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.9ms | Allocations: 8226)
+Completed 200 OK in 55ms (Views: 40.3ms | ActiveRecord: 3.2ms | Allocations: 9884)
+
+
+Started GET "/inks" for 172.19.0.1 at 2023-03-06 05:49:32 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by InksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inks/index.html.erb within layouts/application
+  [1m[36mInk Load (1.6ms)[0m  [1m[34mSELECT "inks".* FROM "inks"[0m
+  ↳ app/views/inks/index.html.erb:15
+  Rendered inks/index.html.erb within layouts/application (Duration: 54.5ms | Allocations: 37106)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 104.0ms | Allocations: 45357)
+Completed 200 OK in 108ms (Views: 105.8ms | ActiveRecord: 1.6ms | Allocations: 45759)
+
+

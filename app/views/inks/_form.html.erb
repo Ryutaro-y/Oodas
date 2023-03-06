@@ -1,0 +1,25 @@
+<%= form_with(model: ink) do |form| %>
+  <% if ink.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(ink.errors.count, "error") %> prohibited this ink from being saved:</h2>
+
+      <ul>
+        <% ink.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form">
+    <div class="form-group col-md-3">
+      <%= form.label :name, "インク名" %>
+      <%= form.text_field :name %>
+    </div>
+    <div class="form-group col-md-3">
+      <%= form.label :color_type, "色" %>
+      <%= form.text_field :color_type %>
+    </div>
+  </div>
+  <div><%= form.submit "登録", class: 'btn btn-primary register-btn' %></div>
+<% end %>

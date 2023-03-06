@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<h2>詳細</h2>
+<table>
+  <thead>
+    <tr>
+      <th>インク名</th>
+      <th>色</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <td><%= @ink.name %></td>
+        <td><%= @ink.color_type %></td>
+        <td><%= link_to '編集', edit_ink_path(@ink) %></td>
+      </tr>
+  </tbody>
+</table>
+<%= link_to '戻る', inks_path, class: 'btn btn-primary register-btn' %>

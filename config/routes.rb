@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :inks
   resources :stocks
   resources :locations
   resources :users
