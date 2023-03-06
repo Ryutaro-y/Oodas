@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<h2>詳細</h2>
+<table>
+  <thead>
+    <tr>
+      <th>仕入れ先名</th>
+      <th>メールアドレス</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <td><%= @supplier.name %></td>
+        <td><%= @supplier.email %></td>
+        <td><%= link_to '編集', edit_supplier_path(@supplier) %></td>
+      </tr>
+  </tbody>
+</table>
+<%= link_to '戻る', suppliers_path, class: 'btn btn-primary register-btn' %>
