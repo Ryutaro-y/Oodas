@@ -16,7 +16,7 @@ class StocksTest < ApplicationSystemTestCase
 
     fill_in "Color type", with: @stock.color_type
     fill_in "Ink name", with: @stock.ink_name
-    fill_in "Location", with: @stock.location_id
+    fill_in "Location", with: @stock.location_name
     fill_in "Quantity", with: @stock.quantity
     fill_in "User", with: @stock.user_id
     click_on "Create Stock"
@@ -31,7 +31,7 @@ class StocksTest < ApplicationSystemTestCase
 
     fill_in "Color type", with: @stock.color_type
     fill_in "Ink name", with: @stock.ink_name
-    fill_in "Location", with: @stock.location_id
+    fill_in "Location", with: @stock.location_name
     fill_in "Quantity", with: @stock.quantity
     fill_in "User", with: @stock.user_id
     click_on "Update Stock"

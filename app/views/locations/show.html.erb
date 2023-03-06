@@ -1,14 +1,19 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>ロケーション名:</strong>
   <%= @location.name %>
 </p>
 
 <p>
-  <strong>Address:</strong>
-  <%= @location.address %>
+  <strong>段:</strong>
+  <%= @location.stage %>
 </p>
 
-<%= link_to 'Edit', edit_location_path(@location) %> |
-<%= link_to 'Back', locations_path %>
+<p>
+  <strong>インク名:</strong>
+  <%= @location.ink_name %>
+</p>
+
+<%= link_to '編集', edit_location_path(@location) %> |
+<%= link_to '戻る', locations_path %>

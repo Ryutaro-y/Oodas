@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_03_02_054321) do
+ActiveRecord::Schema.define(version: 2023_03_05_164945) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,11 +28,10 @@ ActiveRecord::Schema.define(version: 2023_03_02_054321) do
     t.string "color_type"
     t.integer "quantity"
     t.bigint "user_id", null: false
-    t.bigint "location_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "stage"
-    t.index ["location_id"], name: "index_stocks_on_location_id"
+    t.string "location_name"
     t.index ["user_id"], name: "index_stocks_on_user_id"
   end
 
@@ -42,6 +41,5 @@ ActiveRecord::Schema.define(version: 2023_03_02_054321) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "stocks", "locations"
   add_foreign_key "stocks", "users"
 end

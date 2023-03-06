@@ -25,7 +25,7 @@ class StocksController < ApplicationController
 
     respond_to do |format|
       if @stock.save
-        format.html { redirect_to stock_url(@stock), notice: "Stock was successfully created." }
+        format.html { redirect_to stock_url(@stock), notice: "在庫の登録に成功しました。" }
         format.json { render :show, status: :created, location: @stock }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class StocksController < ApplicationController
   def update
     respond_to do |format|
       if @stock.update(stock_params)
-        format.html { redirect_to stock_url(@stock), notice: "Stock was successfully updated." }
+        format.html { redirect_to stock_url(@stock), notice: "在庫の更新に成功しました。" }
         format.json { render :show, status: :ok, location: @stock }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class StocksController < ApplicationController
     @stock.destroy
 
     respond_to do |format|
-      format.html { redirect_to stocks_url, notice: "Stock was successfully destroyed." }
+      format.html { redirect_to stocks_url, notice: "在庫の削除に成功しました。" }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class StocksController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def stock_params
-      params.require(:stock).permit(:ink_name, :color_type, :quantity, :user_id, :location_id)
+      params.require(:stock).permit(:ink_name, :color_type, :location_name, :stage, :quantity, :user_id)
     end
 end

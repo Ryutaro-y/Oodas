@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM ruby:3.0.4
+FROM ruby:3.1.2
 
 # Node.jsとYarnをインストール
 RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
@@ -8,9 +8,11 @@ RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources
 RUN apt-get update && apt-get install -y nodejs yarn
 
 RUN apt-get update -qq && apt-get install -y nodejs postgresql-client
+RUN apt-get update && apt-get install -y postgresql-server-dev-all
 WORKDIR /myapp
 COPY Gemfile /myapp/Gemfile
 COPY Gemfile.lock /myapp/Gemfile.lock
+RUN bundle update
 RUN bundle install
 RUN rails webpacker:install
 

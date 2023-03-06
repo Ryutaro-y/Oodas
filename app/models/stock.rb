@@ -1,5 +1,5 @@
 class Stock < ApplicationRecord
   belongs_to :user
-  belongs_to :location
-  belongs_to :location_stage, class_name: 'Location', primary_key: 'stage', foreign_key: 'stage'
+  belongs_to :location, foreign_key: :ink_name, primary_key: :ink_name
+  validates :ink_name, uniqueness: true
 end

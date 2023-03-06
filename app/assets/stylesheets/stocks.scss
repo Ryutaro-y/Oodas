@@ -10,8 +10,8 @@ h2 {
 }
 
 .register-btn {
-    margin-top: 31px;
-    margin-right: 10px;
+    float: right;
+    margin-right: 80px;
 }
 
 table {
@@ -32,9 +32,13 @@ table {
     }
 }
 
+.quantity {
+    color: blue;
+}
+
 .form {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .form-group {

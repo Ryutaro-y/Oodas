@@ -1,35 +1,29 @@
 <p id="notice"><%= notice %></p>
 
 <h2>詳細</h2>
-<p>
-  <strong>インク名:</strong>
-  <%= @stock.ink_name %>
-</p>
+<table>
+  <thead>
+    <tr>
+      <th>インク名</th>
+      <th>色</th>
+      <th>ロケーション</th>
+      <th>段</th>
+      <th>在庫数</th>
+      <th>管理者</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
 
-<p>
-  <strong>色:</strong>
-  <%= @stock.color_type %>
-</p>
-
-<p>
-  <strong>ロケーション:</strong>
-  <%= @stock.location_id %>
-</p>
-
-<p>
-  <strong>段:</strong>
-  <%= @stock.stage %>
-</p>
-
-<p>
-  <strong>在庫数:</strong>
-  <%= @stock.quantity %>
-</p>
-
-<p>
-  <strong>管理者:</strong>
-  <%= @stock.user_id %>
-</p>
-
-<%= link_to '編集', edit_stock_path(@stock) %> |
-<%= link_to '戻る', stocks_path %>
+  <tbody>
+      <tr>
+        <td><%= @stock.ink_name %></td>
+        <td><%= @stock.color_type %></td>
+        <td><%= @stock.location_name %></td>
+        <td><%= @stock.stage %></td>
+        <td class="quantity"><%= @stock.quantity %></td>
+        <td><%= @stock.user_id %></td>
+        <td><%= link_to '編集', edit_stock_path(@stock) %></td>
+      </tr>
+  </tbody>
+</table>
+<%= link_to '戻る', stocks_path, class: 'btn btn-primary register-btn' %>
