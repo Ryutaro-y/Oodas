@@ -1,19 +1,23 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>ロケーション名:</strong>
-  <%= @location.name %>
-</p>
+<h2>詳細</h2>
+<table>
+  <thead>
+    <tr>
+      <th>ロケーション名</th>
+      <th>段</th>
+      <th>インク名</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
 
-<p>
-  <strong>段:</strong>
-  <%= @location.stage %>
-</p>
-
-<p>
-  <strong>インク名:</strong>
-  <%= @location.ink_name %>
-</p>
-
-<%= link_to '編集', edit_location_path(@location) %> |
-<%= link_to '戻る', locations_path %>
+  <tbody>
+      <tr>
+        <td><%= @location.name %></td>
+        <td><%= @location.stage %></td>
+        <td><%= @location.ink_name %></td>
+        <td><%= link_to '編集', edit_location_path(@location) %></td>
+      </tr>
+  </tbody>
+</table>
+<%= link_to '戻る', locations_path, class: 'btn btn-primary register-btn' %>

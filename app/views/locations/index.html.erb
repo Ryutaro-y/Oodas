@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h2>ロケーション</h2>
-
+<%= link_to '新規', new_location_path, class: 'btn btn-primary new-btn' %>
 <table>
   <thead>
     <tr>
@@ -25,7 +25,3 @@
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to '新規', new_location_path %>
