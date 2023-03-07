@@ -1,0 +1,41 @@
+<%= form_with(model: order) do |form| %>
+  <% if order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(order.errors.count, "error") %> prohibited this order from being saved:</h2>
+
+      <ul>
+        <% order.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form">
+    <div class="form-group col-md-3">
+      <%= form.label :ink_name, "インク名" %>
+      <%= form.text_field :ink_name %>
+    </div>
+    <div class="form-group col-md-3">
+      <%= form.label :order_quantity, "注文個数" %>
+      <%= form.number_field :order_quantity %>
+    </div>
+    <div class="form-group col-md-3">
+      <%= form.label :order_date, "注文日" %>
+      <%= form.date_select :order_date %>
+    </div>
+  </div>
+
+  <div class="form">
+    <div class="form-group col-md-3">
+      <%= form.label :user_id, "注文者" %>
+      <%= form.collection_select :user_id, User.all, :id, :name, {} %>
+    </div>
+    <div class="form-group col-md-3">
+      <%= form.label :supplier_id, "仕入れ先名" %>
+      <%= form.collection_select :supplier_id, Supplier.all, :id, :name, {} %>
+    </div>
+  </div>
+
+  <div><%= form.submit "注文する", class: 'btn btn-primary register-btn' %></div>
+<% end %>

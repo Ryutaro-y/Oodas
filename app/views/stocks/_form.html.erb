@@ -25,6 +25,7 @@
       <%= form.select :location_name, options_for_select(['ロケーション1', 'ロケーション2', 'ロケーション3']) %>
     </div>
   </div>
+
   <div class="form">
     <div class="form-group col-md-3">
       <%= form.label :stage, "段" %>
@@ -39,6 +40,6 @@
       <%= form.collection_select :user_id, User.all, :id, :name, {} %>
     </div>
   </div>
+
   <div><%= form.submit "登録", class: 'btn btn-primary register-btn' %></div>
-  
 <% end %>
