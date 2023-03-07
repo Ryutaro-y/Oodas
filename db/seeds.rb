@@ -15,3 +15,7 @@ end
 CSV.foreach('db/csv/stocks.csv', headers: true) do |row|
     Stock.create!(row.to_hash)
 end
+
+CSV.foreach('db/csv/suppliers.csv', headers: true) do |row|
+    Supplier.create!(row.to_hash)
+end
