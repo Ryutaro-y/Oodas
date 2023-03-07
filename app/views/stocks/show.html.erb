@@ -21,7 +21,7 @@
         <td><%= @stock.location_name %></td>
         <td><%= @stock.stage %></td>
         <td class="quantity"><%= @stock.quantity %></td>
-        <td><%= @stock.user_id %></td>
+        <td><%= @stock.user.name %></td>
         <td><%= link_to '編集', edit_stock_path(@stock) %></td>
       </tr>
   </tbody>

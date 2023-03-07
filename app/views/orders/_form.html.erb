@@ -14,7 +14,12 @@
   <div class="form">
     <div class="form-group col-md-3">
       <%= form.label :ink_name, "インク名" %>
-      <%= form.text_field :ink_name %>
+      <%# 在庫状況から注文する場合、インク名を取得して入力欄に表示 %>
+      <% if params[:ink_name].present? %>
+        <%= form.text_field :ink_name, value: params[:ink_name] %>
+      <% else %>
+        <%= form.text_field :ink_name %>
+      <% end %>
     </div>
     <div class="form-group col-md-3">
       <%= form.label :order_quantity, "注文個数" %>
@@ -22,7 +27,7 @@
     </div>
     <div class="form-group col-md-3">
       <%= form.label :order_date, "注文日" %>
-      <%= form.date_select :order_date %>
+      <%= form.date_select :order_date, use_month_numbers: true %>
     </div>
   </div>
 

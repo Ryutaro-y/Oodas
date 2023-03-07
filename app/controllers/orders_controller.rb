@@ -26,7 +26,7 @@ class OrdersController < ApplicationController
 
     respond_to do |format|
       if @order.save
-        format.html { redirect_to order_url(@order), notice: "Order was successfully created." }
+        format.html { redirect_to order_url(@order), notice: "注文が完了しました。" }
         format.json { render :show, status: :created, location: @order }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -53,7 +53,7 @@ class OrdersController < ApplicationController
     @order.destroy
 
     respond_to do |format|
-      format.html { redirect_to orders_url, notice: "Order was successfully destroyed." }
+      format.html { redirect_to orders_url, notice: "注文履歴が削除されました。" }
       format.json { head :no_content }
     end
   end
@@ -66,6 +66,6 @@ class OrdersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def order_params
-      params.require(:order).permit(:ink_name, :order_quantity, :order_date, :user_id_id, :supplier_id_id)
+      params.require(:order).permit(:ink_name, :order_quantity, :order_date, :user_id, :supplier_id)
     end
 end
