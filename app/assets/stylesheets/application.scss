@@ -14,3 +14,29 @@
  *= require_self
  */
 @import "bootstrap/scss/bootstrap";
+
+.navbar-brand{
+    color: white;
+    padding-left: 15px;
+}
+
+.nav-link {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.575);
+}
+
+h3 {
+    background-color: rgb(228, 228, 228);
+    padding: 10px 20px;
+}
+
+.new-btn {
+    float: right;
+    margin-top: 20px;
+    margin-right: 18px;
+}
+
+.register-btn {
+    float: right;
+    margin-right: 80px;
+}

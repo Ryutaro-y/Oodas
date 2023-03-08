@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+  root to: 'top#index'
   resources :orders
   resources :suppliers
   resources :inks
