@@ -1,0 +1,1258 @@
+Started GET "/stocks" for 172.22.0.1 at 2023-03-08 04:03:33 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (7.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StocksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stocks/index.html.erb within layouts/application
+  [1m[36mStock Load (19.3ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks"[0m
+  ↳ app/views/stocks/index.html.erb:19
+  [1m[36mUser Load (6.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stocks/index.html.erb:27
+  Rendered stocks/index.html.erb within layouts/application (Duration: 1054.6ms | Allocations: 201554)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6455.8ms | Allocations: 237089)
+Completed 200 OK in 6654ms (Views: 6467.3ms | ActiveRecord: 58.2ms | Allocations: 243566)
+
+
+Started GET "/letter_opener" for 172.22.0.1 at 2023-03-08 04:03:46 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered collection of /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.1ms | Allocations: 28)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 5.2ms | Allocations: 1031)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.6ms | Allocations: 117)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 3.5ms | Allocations: 649)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.4ms | Allocations: 180)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 13.6ms | Allocations: 1920)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 2.8ms | Allocations: 1937)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.5ms | Allocations: 335)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 10.2ms | Allocations: 3154)
+  Rendered layout /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 38.4ms | Allocations: 7067)
+Completed 200 OK in 62ms (Views: 43.0ms | ActiveRecord: 0.0ms | Allocations: 9038)
+
+
+Started GET "/letter_opener" for 172.22.0.1 at 2023-03-08 04:11:33 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered collection of /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.2ms | Allocations: 9)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 4.0ms | Allocations: 318)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.2ms | Allocations: 42)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 0.6ms | Allocations: 41)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 4.5ms | Allocations: 347)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.4ms | Allocations: 43)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 3.3ms | Allocations: 250)
+  Rendered layout /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 17.8ms | Allocations: 1197)
+Completed 200 OK in 26ms (Views: 21.0ms | Allocations: 1642)
+
+
+Started GET "/letter_opener" for 172.22.0.1 at 2023-03-08 04:11:35 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered collection of /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.0ms | Allocations: 9)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 2.0ms | Allocations: 318)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 0.3ms | Allocations: 41)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 4.6ms | Allocations: 347)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.3ms | Allocations: 43)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 2.7ms | Allocations: 250)
+  Rendered layout /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 14.6ms | Allocations: 1196)
+Completed 200 OK in 19ms (Views: 17.2ms | Allocations: 1579)
+
+
+Started GET "/letter_opener" for 172.22.0.1 at 2023-03-08 04:11:56 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered collection of /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.0ms | Allocations: 9)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 2.2ms | Allocations: 318)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.6ms | Allocations: 42)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 0.5ms | Allocations: 41)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.2ms | Allocations: 41)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 6.5ms | Allocations: 347)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.2ms | Allocations: 43)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.3ms | Allocations: 43)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 3.7ms | Allocations: 250)
+  Rendered layout /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 19.4ms | Allocations: 1197)
+Completed 200 OK in 25ms (Views: 23.1ms | Allocations: 1585)
+
+
+Started GET "/orders" for 172.22.0.1 at 2023-03-08 04:18:42 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by OrdersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering orders/index.html.erb within layouts/application
+  [1m[36mOrder Load (16.0ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/views/orders/index.html.erb:16
+  Rendered orders/index.html.erb within layouts/application (Duration: 125.2ms | Allocations: 11613)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 213.9ms | Allocations: 20021)
+Completed 200 OK in 237ms (Views: 218.8ms | ActiveRecord: 81.3ms | Allocations: 22253)
+
+
+Started GET "/orders/new" for 172.22.0.1 at 2023-03-08 04:18:45 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by OrdersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering orders/new.html.erb within layouts/application
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/orders/_form.html.erb:37
+  [1m[36mSupplier Load (7.2ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/orders/_form.html.erb:41
+  Rendered orders/_form.html.erb (Duration: 285.2ms | Allocations: 12665)
+  Rendered orders/new.html.erb within layouts/application (Duration: 290.7ms | Allocations: 12988)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 332.3ms | Allocations: 21377)
+Completed 200 OK in 343ms (Views: 319.5ms | ActiveRecord: 15.7ms | Allocations: 22055)
+
+
+Started POST "/orders" for 172.22.0.1 at 2023-03-08 04:19:14 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by OrdersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "order"=>{"ink_name"=>"K", "order_quantity"=>"10", "order_date(1i)"=>"2023", "order_date(2i)"=>"3", "order_date(3i)"=>"8", "user_id"=>"1", "supplier_id"=>"1"}, "commit"=>"注文する"}
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/orders_controller.rb:23:in `block in create'
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:23:in `block in create'
+  [1m[36mSupplier Load (1.7ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers" WHERE "suppliers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:23:in `block in create'
+  [1m[36mStock Load (7.1ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks" WHERE "stocks"."ink_name" = $1 LIMIT $2[0m  [["ink_name", "K"], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:23:in `block in create'
+  [1m[36mOrder Create (25.8ms)[0m  [1m[32mINSERT INTO "orders" ("ink_name", "order_quantity", "order_date", "user_id", "supplier_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["ink_name", "K"], ["order_quantity", 10], ["order_date", "2023-03-08"], ["user_id", 1], ["supplier_id", 1], ["created_at", "2023-03-08 04:19:14.417034"], ["updated_at", "2023-03-08 04:19:14.417034"]]
+  ↳ app/controllers/orders_controller.rb:23:in `block in create'
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/orders_controller.rb:23:in `block in create'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/order_email.html.erb within layouts/mailer
+  Rendered order_mailer/order_email.html.erb within layouts/mailer (Duration: 9.7ms | Allocations: 222)
+  Rendered layout layouts/mailer.html.erb (Duration: 15.9ms | Allocations: 416)
+OrderMailer#order_email: processed outbound mail in 126.2ms
+Delivered mail 64080cc2df15f_1585c5179e@7bd72ad40551.mail (158.2ms)
+Date: Wed, 08 Mar 2023 04:19:14 +0000
+From: labelprint@example.com
+To: support@inktech.co.jp
+Message-ID: <64080cc2df15f_1585c5179e@7bd72ad40551.mail>
+Subject: =?UTF-8?Q?=E3=82=A4=E3=83=B3=E3=82=AF=E3=81=AE=E6=B3=A8=E6=96=87=E3=81=A7=E3=81=94=E3=81=96=E3=81=84=E3=81=BE=E3=81=99?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+DQo8aHRtbD4NCiAgPGhlYWQ+DQogICAgPG1ldGEg
+aHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7
+IGNoYXJzZXQ9dXRmLTgiIC8+DQogICAgPHN0eWxlPg0KICAgICAgLyogRW1h
+aWwgc3R5bGVzIG5lZWQgdG8gYmUgaW5saW5lICovDQogICAgPC9zdHlsZT4N
+CiAgPC9oZWFkPg0KDQogIDxib2R5Pg0KICAgIDxwPuOBiuS4luipseOBq+OB
+quOBo+OBpuOBiuOCiuOBvuOBmeOAgjwvcD4NCjxwPuagquW8j+S8muekvuOA
+h+OAh+OBp+OBmeOAgjwvcD4NCjxicj4NCjxwPuOCpOODs+OCr+OBruazqOaW
+h+OCkuOBiumhmOOBhOOBhOOBn+OBl+OBvuOBmeOAgjwvcD4NCjxicj4NCjxi
+cj4NCjxwPuOCpOODs+OCr+WQjTogSzwvcD4NCjxwPuazqOaWh+WAi+aVsDog
+MTA8L3A+DQo8cD7ms6jmlofml6U6IDIwMjMtMDMtMDg8L3A+DQo8YnI+DQo8
+cD7ku6XkuIrjgavjgarjgorjgb7jgZnjga7jgafjgIHjgojjgo3jgZfjgY/j
+gYrpoZjjgYTjgYTjgZ/jgZfjgb7jgZnjgII8L3A+DQo8YnI+DQo8YnI+DQo8
+YnI+DQo8YnI+DQo8cD7kvY/miYA8L3A+DQo8cD7kvJrnpL7lkI08L3A+DQo8
+cD7pm7voqbHnlarlj7c8L3A+DQo8cD7jg6Hjg7zjg6vjgqLjg4njg6zjgrk8
+L3A+DQogIDwvYm9keT4NCjwvaHRtbD4NCg==
+
+Redirected to http://localhost:3000/orders/3
+Completed 302 Found in 707ms (ActiveRecord: 46.7ms | Allocations: 41884)
+
+
+Started GET "/orders/3" for 172.22.0.1 at 2023-03-08 04:19:15 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mOrder Load (0.8ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:59:in `set_order'
+  [1m[36mCACHE Order Load (0.0ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering orders/show.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/orders/show.html.erb:19
+  [1m[36mSupplier Load (0.9ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers" WHERE "suppliers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/orders/show.html.erb:20
+  Rendered orders/show.html.erb within layouts/application (Duration: 13.9ms | Allocations: 2012)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.7ms | Allocations: 10352)
+Completed 200 OK in 69ms (Views: 56.0ms | ActiveRecord: 3.1ms | Allocations: 12446)
+
+
+Started GET "/orders" for 172.22.0.1 at 2023-03-08 04:19:26 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by OrdersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering orders/index.html.erb within layouts/application
+  [1m[36mOrder Load (1.6ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/views/orders/index.html.erb:16
+  Rendered orders/index.html.erb within layouts/application (Duration: 10.5ms | Allocations: 1400)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 76.3ms | Allocations: 9712)
+Completed 200 OK in 80ms (Views: 77.3ms | ActiveRecord: 1.6ms | Allocations: 10131)
+
+
+Started GET "/letter_opener/" for 172.22.0.1 at 2023-03-08 04:19:50 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/_item.html.erb (Duration: 11.7ms | Allocations: 1963)
+  Rendered collection of /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.1ms | Allocations: 13)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 31.7ms | Allocations: 2946)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.2ms | Allocations: 41)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 0.4ms | Allocations: 41)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.2ms | Allocations: 41)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 13.5ms | Allocations: 1114)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.3ms | Allocations: 44)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.2ms | Allocations: 43)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 9.8ms | Allocations: 763)
+  Rendered layout /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 67.9ms | Allocations: 5616)
+Completed 200 OK in 83ms (Views: 71.6ms | ActiveRecord: 0.0ms | Allocations: 6299)
+
+
+Started GET "/letter_opener/1678249154_9607668_7666726/rich" for 172.22.0.1 at 2023-03-08 04:19:50 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1678249154_9607668_7666726", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.3ms | Allocations: 48)
+Completed 200 OK in 65ms (Views: 59.6ms | ActiveRecord: 0.0ms | Allocations: 4339)
+
+
+Started GET "/orders/new" for 172.22.0.1 at 2023-03-08 04:20:34 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by OrdersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering orders/new.html.erb within layouts/application
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/orders/_form.html.erb:37
+  [1m[36mSupplier Load (1.2ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/orders/_form.html.erb:41
+  Rendered orders/_form.html.erb (Duration: 18.4ms | Allocations: 4830)
+  Rendered orders/new.html.erb within layouts/application (Duration: 19.9ms | Allocations: 4929)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 64.9ms | Allocations: 13285)
+Completed 200 OK in 69ms (Views: 64.8ms | ActiveRecord: 3.3ms | Allocations: 13785)
+
+
+Started POST "/orders" for 172.22.0.1 at 2023-03-08 04:21:11 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by OrdersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "order"=>{"ink_name"=>"B450", "order_quantity"=>"2", "order_date(1i)"=>"2023", "order_date(2i)"=>"3", "order_date(3i)"=>"8", "user_id"=>"2", "supplier_id"=>"3"}, "commit"=>"注文する"}
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/orders_controller.rb:23:in `block in create'
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:23:in `block in create'
+  [1m[36mSupplier Load (1.2ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers" WHERE "suppliers"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:23:in `block in create'
+  [1m[36mStock Load (1.5ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks" WHERE "stocks"."ink_name" = $1 LIMIT $2[0m  [["ink_name", "B450"], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:23:in `block in create'
+  [1m[36mOrder Create (1.2ms)[0m  [1m[32mINSERT INTO "orders" ("ink_name", "order_quantity", "order_date", "user_id", "supplier_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["ink_name", "B450"], ["order_quantity", 2], ["order_date", "2023-03-08"], ["user_id", 2], ["supplier_id", 3], ["created_at", "2023-03-08 04:21:11.920295"], ["updated_at", "2023-03-08 04:21:11.920295"]]
+  ↳ app/controllers/orders_controller.rb:23:in `block in create'
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/orders_controller.rb:23:in `block in create'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/order_email.html.erb within layouts/mailer
+  Rendered order_mailer/order_email.html.erb within layouts/mailer (Duration: 0.2ms | Allocations: 41)
+  Rendered layout layouts/mailer.html.erb (Duration: 2.3ms | Allocations: 125)
+OrderMailer#order_email: processed outbound mail in 7.2ms
+Delivered mail 64080d37e5d32_1585c518bd@7bd72ad40551.mail (16.0ms)
+Date: Wed, 08 Mar 2023 04:21:11 +0000
+From: labelprint@example.com
+To: sales@printjapan.co.jp
+Message-ID: <64080d37e5d32_1585c518bd@7bd72ad40551.mail>
+Subject: =?UTF-8?Q?=E3=82=A4=E3=83=B3=E3=82=AF=E3=81=AE=E6=B3=A8=E6=96=87=E3=81=A7=E3=81=94=E3=81=96=E3=81=84=E3=81=BE=E3=81=99?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+DQo8aHRtbD4NCiAgPGhlYWQ+DQogICAgPG1ldGEg
+aHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7
+IGNoYXJzZXQ9dXRmLTgiIC8+DQogICAgPHN0eWxlPg0KICAgICAgLyogRW1h
+aWwgc3R5bGVzIG5lZWQgdG8gYmUgaW5saW5lICovDQogICAgPC9zdHlsZT4N
+CiAgPC9oZWFkPg0KDQogIDxib2R5Pg0KICAgIDxwPuOBiuS4luipseOBq+OB
+quOBo+OBpuOBiuOCiuOBvuOBmeOAgjwvcD4NCjxwPuagquW8j+S8muekvuOA
+h+OAh+OBp+OBmeOAgjwvcD4NCjxicj4NCjxwPuOCpOODs+OCr+OBruazqOaW
+h+OCkuOBiumhmOOBhOOBhOOBn+OBl+OBvuOBmeOAgjwvcD4NCjxicj4NCjxi
+cj4NCjxwPuOCpOODs+OCr+WQjTogQjQ1MDwvcD4NCjxwPuazqOaWh+WAi+aV
+sDogMjwvcD4NCjxwPuazqOaWh+aXpTogMjAyMy0wMy0wODwvcD4NCjxicj4N
+CjxwPuS7peS4iuOBq+OBquOCiuOBvuOBmeOBruOBp+OAgeOCiOOCjeOBl+OB
+j+OBiumhmOOBhOOBhOOBn+OBl+OBvuOBmeOAgjwvcD4NCjxicj4NCjxicj4N
+Cjxicj4NCjxicj4NCjxwPuS9j+aJgDwvcD4NCjxwPuS8muekvuWQjTwvcD4N
+CjxwPumbu+ipseeVquWPtzwvcD4NCjxwPuODoeODvOODq+OCouODieODrOOC
+uTwvcD4NCiAgPC9ib2R5Pg0KPC9odG1sPg0K
+
+Redirected to http://localhost:3000/orders/4
+Completed 302 Found in 69ms (ActiveRecord: 10.9ms | Allocations: 12410)
+
+
+Started GET "/orders/4" for 172.22.0.1 at 2023-03-08 04:21:11 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mOrder Load (0.7ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:59:in `set_order'
+  [1m[36mCACHE Order Load (0.0ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering orders/show.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/orders/show.html.erb:19
+  [1m[36mSupplier Load (1.0ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers" WHERE "suppliers"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/orders/show.html.erb:20
+  Rendered orders/show.html.erb within layouts/application (Duration: 10.2ms | Allocations: 1751)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.6ms | Allocations: 9956)
+Completed 200 OK in 65ms (Views: 54.7ms | ActiveRecord: 3.1ms | Allocations: 11498)
+
+
+Started GET "/letter_opener/" for 172.22.0.1 at 2023-03-08 04:21:20 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/_item.html.erb (Duration: 4.7ms | Allocations: 1576)
+  Rendered collection of /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/_item.html.erb [1 times] (Duration: 3.5ms | Allocations: 1700)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 12.8ms | Allocations: 3760)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 0.4ms | Allocations: 41)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 6.0ms | Allocations: 346)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.2ms | Allocations: 44)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 2.7ms | Allocations: 251)
+  Rendered layout /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 28.1ms | Allocations: 4638)
+Completed 200 OK in 37ms (Views: 31.1ms | ActiveRecord: 0.0ms | Allocations: 5049)
+
+
+Started GET "/letter_opener/1678249271_9420245_09b97a6/rich" for 172.22.0.1 at 2023-03-08 04:21:20 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1678249271_9420245_09b97a6", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 27)
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 692)
+
+
+Started GET "/letter_opener/1678249154_9607668_7666726/rich" for 172.22.0.1 at 2023-03-08 04:21:25 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1678249154_9607668_7666726", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 6ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 675)
+
+
+Started GET "/letter_opener/1678249271_9420245_09b97a6/rich" for 172.22.0.1 at 2023-03-08 04:21:31 +0000
+Started GET "/letter_opener/1678249271_9420245_09b97a6/rich" for 172.22.0.1 at 2023-03-08 04:21:31 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#show as HTML
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1678249271_9420245_09b97a6", "style"=>"rich"}
+  Parameters: {"id"=>"1678249271_9420245_09b97a6", "style"=>"rich"}
+  Rendering html template
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 6ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 937)
+
+
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 1389)
+
+
+Started GET "/letter_opener" for 172.22.0.1 at 2023-03-08 04:22:55 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/_item.html.erb (Duration: 3.9ms | Allocations: 1814)
+  Rendered collection of /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/_item.html.erb [1 times] (Duration: 3.3ms | Allocations: 1668)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 14.3ms | Allocations: 4707)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.6ms | Allocations: 110)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 3.8ms | Allocations: 647)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.4ms | Allocations: 178)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 13.3ms | Allocations: 1897)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 3.6ms | Allocations: 1928)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.5ms | Allocations: 333)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 9.7ms | Allocations: 3132)
+  Rendered layout /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 47.7ms | Allocations: 10663)
+Completed 200 OK in 56ms (Views: 52.5ms | ActiveRecord: 0.0ms | Allocations: 11872)
+
+
+Started GET "/letter_opener/1678249271_9420245_09b97a6/rich" for 172.22.0.1 at 2023-03-08 04:22:55 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1678249271_9420245_09b97a6", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 28)
+Completed 200 OK in 7ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 738)
+
+
+Started GET "/letter_opener/1678249154_9607668_7666726/rich" for 172.22.0.1 at 2023-03-08 04:22:58 +0000
+Started GET "/letter_opener/1678249154_9607668_7666726/rich" for 172.22.0.1 at 2023-03-08 04:22:58 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#show as HTML
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1678249154_9607668_7666726", "style"=>"rich"}
+  Parameters: {"id"=>"1678249154_9607668_7666726", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+  Rendering html template
+Completed 200 OK in 7ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 1253)
+
+
+  Rendered html template (Duration: 0.2ms | Allocations: 27)
+Completed 200 OK in 10ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 1242)
+
+
+Started GET "/letter_opener/1678249271_9420245_09b97a6/rich" for 172.22.0.1 at 2023-03-08 04:23:00 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1678249271_9420245_09b97a6", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 675)
+
+
+Started GET "/letter_opener" for 172.22.0.1 at 2023-03-08 04:23:09 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/_item.html.erb (Duration: 5.4ms | Allocations: 1495)
+  Rendered collection of /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/_item.html.erb [1 times] (Duration: 3.3ms | Allocations: 1462)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 14.6ms | Allocations: 3432)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 0.2ms | Allocations: 41)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 4.3ms | Allocations: 346)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.2ms | Allocations: 43)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 2.8ms | Allocations: 250)
+  Rendered layout /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 31.9ms | Allocations: 4309)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.0ms | Allocations: 4714)
+
+
+Started GET "/letter_opener/1678249271_9420245_09b97a6/rich" for 172.22.0.1 at 2023-03-08 04:23:09 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1678249271_9420245_09b97a6", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 27)
+Completed 200 OK in 6ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 675)
+
+
+Started GET "/orders" for 172.22.0.1 at 2023-03-08 04:23:19 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by OrdersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering orders/index.html.erb within layouts/application
+  [1m[36mOrder Load (8.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/views/orders/index.html.erb:16
+  Rendered orders/index.html.erb within layouts/application (Duration: 20.2ms | Allocations: 2110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 78.6ms | Allocations: 10770)
+Completed 200 OK in 94ms (Views: 80.1ms | ActiveRecord: 8.1ms | Allocations: 12138)
+
+
+Started GET "/orders/new" for 172.22.0.1 at 2023-03-08 04:23:22 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by OrdersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering orders/new.html.erb within layouts/application
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/orders/_form.html.erb:37
+  [1m[36mSupplier Load (2.4ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/orders/_form.html.erb:41
+  Rendered orders/_form.html.erb (Duration: 29.8ms | Allocations: 5134)
+  Rendered orders/new.html.erb within layouts/application (Duration: 35.7ms | Allocations: 5529)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 80.8ms | Allocations: 13744)
+Completed 200 OK in 86ms (Views: 78.8ms | ActiveRecord: 5.0ms | Allocations: 14356)
+
+
+Started POST "/orders" for 172.22.0.1 at 2023-03-08 04:23:46 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by OrdersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "order"=>{"ink_name"=>"メジウム", "order_quantity"=>"15", "order_date(1i)"=>"2023", "order_date(2i)"=>"3", "order_date(3i)"=>"8", "user_id"=>"3", "supplier_id"=>"2"}, "commit"=>"注文する"}
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/orders_controller.rb:23:in `block in create'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:23:in `block in create'
+  [1m[36mSupplier Load (1.2ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers" WHERE "suppliers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:23:in `block in create'
+  [1m[36mStock Load (1.5ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks" WHERE "stocks"."ink_name" = $1 LIMIT $2[0m  [["ink_name", "メジウム"], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:23:in `block in create'
+  [1m[36mOrder Create (1.6ms)[0m  [1m[32mINSERT INTO "orders" ("ink_name", "order_quantity", "order_date", "user_id", "supplier_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["ink_name", "メジウム"], ["order_quantity", 15], ["order_date", "2023-03-08"], ["user_id", 3], ["supplier_id", 2], ["created_at", "2023-03-08 04:23:47.033034"], ["updated_at", "2023-03-08 04:23:47.033034"]]
+  ↳ app/controllers/orders_controller.rb:23:in `block in create'
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/orders_controller.rb:23:in `block in create'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/order_email.html.erb within layouts/mailer
+  Rendered order_mailer/order_email.html.erb within layouts/mailer (Duration: 3.2ms | Allocations: 214)
+  Rendered layout layouts/mailer.html.erb (Duration: 8.1ms | Allocations: 406)
+OrderMailer#order_email: processed outbound mail in 14.2ms
+Delivered mail 64080dd3f5d6_154d85195b@7bd72ad40551.mail (17.5ms)
+Date: Wed, 08 Mar 2023 04:23:47 +0000
+From: labelprint@example.com
+To: sales@printlabo.co.jp
+Message-ID: <64080dd3f5d6_154d85195b@7bd72ad40551.mail>
+Subject: =?UTF-8?Q?=E3=82=A4=E3=83=B3=E3=82=AF=E3=81=AE=E6=B3=A8=E6=96=87=E3=81=A7=E3=81=94=E3=81=96=E3=81=84=E3=81=BE=E3=81=99?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+DQo8aHRtbD4NCiAgPGhlYWQ+DQogICAgPG1ldGEg
+aHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7
+IGNoYXJzZXQ9dXRmLTgiIC8+DQogICAgPHN0eWxlPg0KICAgICAgLyogRW1h
+aWwgc3R5bGVzIG5lZWQgdG8gYmUgaW5saW5lICovDQogICAgPC9zdHlsZT4N
+CiAgPC9oZWFkPg0KDQogIDxib2R5Pg0KICAgIDxwPuOBiuS4luipseOBq+OB
+quOBo+OBpuOBiuOCiuOBvuOBmeOAgjwvcD4NCjxwPuagquW8j+S8muekvuOA
+h+OAh+OBp+OBmeOAgjwvcD4NCjxicj4NCjxwPuOCpOODs+OCr+OBruazqOaW
+h+OCkuOBiumhmOOBhOOBhOOBn+OBl+OBvuOBmeOAgjwvcD4NCjxicj4NCjxw
+PuOCpOODs+OCr+WQjTog44Oh44K444Km44OgPC9wPg0KPHA+5rOo5paH5YCL
+5pWwOiAxNTwvcD4NCjxwPuazqOaWh+aXpTogMjAyMy0wMy0wODwvcD4NCjxi
+cj4NCjxwPuS7peS4iuOBq+OBquOCiuOBvuOBmeOBruOBp+OAgeOCiOOCjeOB
+l+OBj+OBiumhmOOBhOOBhOOBn+OBl+OBvuOBmeOAgjwvcD4NCjxicj4NCjxi
+cj4NCjxwPuS9j+aJgDwvcD4NCjxwPuS8muekvuWQjTwvcD4NCjxwPumbu+ip
+seeVquWPtzwvcD4NCjxwPuODoeODvOODq+OCouODieODrOOCuTwvcD4NCiAg
+PC9ib2R5Pg0KPC9odG1sPg0K
+
+Redirected to http://localhost:3000/orders/5
+Completed 302 Found in 78ms (ActiveRecord: 9.8ms | Allocations: 13354)
+
+
+Started GET "/orders/5" for 172.22.0.1 at 2023-03-08 04:23:47 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mOrder Load (1.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:59:in `set_order'
+  [1m[36mCACHE Order Load (0.0ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering orders/show.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/orders/show.html.erb:19
+  [1m[36mSupplier Load (1.3ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers" WHERE "suppliers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/orders/show.html.erb:20
+  Rendered orders/show.html.erb within layouts/application (Duration: 14.4ms | Allocations: 1997)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 61.0ms | Allocations: 10333)
+Completed 200 OK in 75ms (Views: 60.3ms | ActiveRecord: 4.5ms | Allocations: 12160)
+
+
+Started GET "/letter_opener/" for 172.22.0.1 at 2023-03-08 04:23:51 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/_item.html.erb (Duration: 10.8ms | Allocations: 1576)
+  Rendered collection of /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/_item.html.erb [2 times] (Duration: 6.6ms | Allocations: 2919)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 26.3ms | Allocations: 5455)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 0.2ms | Allocations: 41)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 8.4ms | Allocations: 1114)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.2ms | Allocations: 44)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 5.1ms | Allocations: 763)
+  Rendered layout /usr/local/bundle/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 50.2ms | Allocations: 8125)
+Completed 200 OK in 61ms (Views: 52.9ms | ActiveRecord: 0.0ms | Allocations: 8813)
+
+
+Started GET "/letter_opener/1678249427_0636532_797f41a/rich" for 172.22.0.1 at 2023-03-08 04:23:52 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1678249427_0636532_797f41a", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 28)
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 700)
+
+
+Started GET "/letter_opener/1678249271_9420245_09b97a6/rich" for 172.22.0.1 at 2023-03-08 04:23:55 +0000
+Started GET "/letter_opener/1678249271_9420245_09b97a6/rich" for 172.22.0.1 at 2023-03-08 04:23:55 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#show as HTML
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1678249271_9420245_09b97a6", "style"=>"rich"}
+  Parameters: {"id"=>"1678249271_9420245_09b97a6", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+  Rendering html template
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 1253)
+
+
+  Rendered html template (Duration: 0.3ms | Allocations: 27)
+Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 1063)
+
+
+Started GET "/letter_opener/1678249154_9607668_7666726/rich" for 172.22.0.1 at 2023-03-08 04:23:56 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1678249154_9607668_7666726", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 675)
+
+
+Started GET "/letter_opener/1678249271_9420245_09b97a6/rich" for 172.22.0.1 at 2023-03-08 04:23:58 +0000
+Started GET "/letter_opener/1678249271_9420245_09b97a6/rich" for 172.22.0.1 at 2023-03-08 04:23:58 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#show as HTML
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1678249271_9420245_09b97a6", "style"=>"rich"}
+  Parameters: {"id"=>"1678249271_9420245_09b97a6", "style"=>"rich"}
+  Rendering html template
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 1015)
+
+
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 1311)
+
+
+Started GET "/letter_opener/1678249427_0636532_797f41a/rich" for 172.22.0.1 at 2023-03-08 04:23:59 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/letter_opener/1678249427_0636532_797f41a/rich" for 172.22.0.1 at 2023-03-08 04:23:59 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1678249427_0636532_797f41a", "style"=>"rich"}
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1678249427_0636532_797f41a", "style"=>"rich"}
+  Rendering html template
+  Rendering html template
+  Rendered html template (Duration: 0.3ms | Allocations: 27)
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 1330)
+
+
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 811)
+
+
+Started GET "/letter_opener/1678249271_9420245_09b97a6/rich" for 172.22.0.1 at 2023-03-08 04:24:10 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1678249271_9420245_09b97a6", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 675)
+
+
+Started GET "/letter_opener/1678249154_9607668_7666726/rich" for 172.22.0.1 at 2023-03-08 04:24:12 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1678249154_9607668_7666726", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 27)
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 675)
+
+
+Started GET "/letter_opener/1678249271_9420245_09b97a6/rich" for 172.22.0.1 at 2023-03-08 04:24:14 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1678249271_9420245_09b97a6", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 675)
+
+
+Started GET "/letter_opener/1678249427_0636532_797f41a/rich" for 172.22.0.1 at 2023-03-08 04:24:16 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/letter_opener/1678249427_0636532_797f41a/rich" for 172.22.0.1 at 2023-03-08 04:24:16 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1678249427_0636532_797f41a", "style"=>"rich"}
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1678249427_0636532_797f41a", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 27)
+  Rendering html template
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 1270)
+
+
+  Rendered html template (Duration: 0.2ms | Allocations: 27)
+Completed 200 OK in 8ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 1045)
+
+
+Started GET "/letter_opener/1678249271_9420245_09b97a6/rich" for 172.22.0.1 at 2023-03-08 04:30:00 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1678249271_9420245_09b97a6", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.7ms | Allocations: 27)
+Completed 200 OK in 6ms (Views: 3.2ms | Allocations: 672)
+
+
+Started GET "/letter_opener/1678249427_0636532_797f41a/rich" for 172.22.0.1 at 2023-03-08 04:30:02 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/letter_opener/1678249427_0636532_797f41a/rich" for 172.22.0.1 at 2023-03-08 04:30:02 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1678249427_0636532_797f41a", "style"=>"rich"}
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1678249427_0636532_797f41a", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+  Rendering html template
+Completed 200 OK in 8ms (Views: 5.0ms | Allocations: 1258)
+
+
+  Rendered html template (Duration: 0.2ms | Allocations: 27)
+Completed 200 OK in 9ms (Views: 5.2ms | Allocations: 1038)
+
+
+Started GET "/letter_opener/1678249271_9420245_09b97a6/rich" for 172.22.0.1 at 2023-03-08 04:30:03 +0000
+Started GET "/letter_opener/1678249271_9420245_09b97a6/rich" for 172.22.0.1 at 2023-03-08 04:30:03 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#show as HTML
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1678249271_9420245_09b97a6", "style"=>"rich"}
+  Parameters: {"id"=>"1678249271_9420245_09b97a6", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 27)
+Completed 200 OK in 7ms (Views: 3.5ms | Allocations: 1249)
+
+
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 10ms (Views: 7.2ms | Allocations: 1245)
+
+
+Started GET "/letter_opener/1678249427_0636532_797f41a/rich" for 172.22.0.1 at 2023-03-08 04:30:05 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/letter_opener/1678249427_0636532_797f41a/rich" for 172.22.0.1 at 2023-03-08 04:30:05 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1678249427_0636532_797f41a", "style"=>"rich"}
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Rendering html template
+  Parameters: {"id"=>"1678249427_0636532_797f41a", "style"=>"rich"}
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 6ms (Views: 4.0ms | Allocations: 1064)
+
+
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 6ms (Views: 3.6ms | Allocations: 974)
+
+
+Started GET "/letter_opener/1678249271_9420245_09b97a6/rich" for 172.22.0.1 at 2023-03-08 04:30:06 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1678249271_9420245_09b97a6", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 5ms (Views: 2.3ms | Allocations: 672)
+
+
+Started GET "/letter_opener/1678249427_0636532_797f41a/rich" for 172.22.0.1 at 2023-03-08 04:30:07 +0000
+Started GET "/letter_opener/1678249427_0636532_797f41a/rich" for 172.22.0.1 at 2023-03-08 04:30:07 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#show as HTML
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1678249427_0636532_797f41a", "style"=>"rich"}
+  Parameters: {"id"=>"1678249427_0636532_797f41a", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+  Rendering html template
+Completed 200 OK in 6ms (Views: 2.7ms | Allocations: 1249)
+
+
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 8ms (Views: 5.7ms | Allocations: 1249)
+
+
+Started GET "/orders" for 172.22.0.1 at 2023-03-08 04:30:40 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by OrdersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering orders/index.html.erb within layouts/application
+  [1m[36mOrder Load (12.8ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/views/orders/index.html.erb:16
+  Rendered orders/index.html.erb within layouts/application (Duration: 72.8ms | Allocations: 7012)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 118.1ms | Allocations: 15244)
+Completed 200 OK in 127ms (Views: 125.5ms | ActiveRecord: 32.9ms | Allocations: 15652)
+
+
