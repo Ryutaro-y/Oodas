@@ -1,6 +1,6 @@
-<%= form_with(model: user) do |form| %>
+<%= form_with(model: user, class: "form-horizontal") do |form| %>
   <% if user.errors.any? %>
-    <div id="error_explanation">
+    <div id="error_explanation" class="alert alert-danger">
       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
 
       <ul>
@@ -11,10 +11,25 @@
     </div>
   <% end %>
 
-  <div class="form-group col-md-3">
-    <%= form.label :name, "管理者" %>
-    <%= form.text_field :name %>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+
+        <div class="form-group row">
+          <%= form.label :name, "管理者", class: "col-sm-4 col-form-label text-sm-right" %>
+          <div class="col-sm-8">
+            <%= form.text_field :name, class: "form-control" %>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="col-sm-8 offset-sm-4">
+            <%= form.submit "登録", class: 'btn btn-primary' %>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
 
-  <div><%= form.submit "登録", class: 'btn btn-primary register-btn' %></div>
 <% end %>

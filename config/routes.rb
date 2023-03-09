@@ -7,7 +7,10 @@ Rails.application.routes.draw do
   resources :stocks
   resources :locations
   resources :users
+  get 'search', to: 'searches#search'
+
   if Rails.env.development?
     mount LetterOpenerWeb::Engine, at: "/letter_opener"
   end
+  
 end
