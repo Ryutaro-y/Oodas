@@ -1,8 +1,6 @@
 <%= form_with(model: stock, class: "form-horizontal") do |form| %>
   <% if stock.errors.any? %>
     <div id="error_explanation" class="alert alert-danger">
-      <h2><%= pluralize(stock.errors.count, "error") %> prohibited this stock from being saved:</h2>
-
       <ul>
         <% stock.errors.each do |error| %>
           <li><%= error.full_message %></li>
@@ -32,7 +30,7 @@
         <div class="form-group row">
           <%= form.label :location_name, "ロケーション", class: "col-sm-4 col-form-label text-sm-right" %>
           <div class="col-sm-8">
-            <%= form.select :location_name, options_for_select(['ロケーション1', 'ロケーション2', 'ロケーション3']), class: "form-control" %>
+            <%= form.select :location_name, options_for_select(['ロケーション1', 'ロケーション2', 'ロケーション3']), {}, class: "form-control" %>
           </div>
         </div>
 

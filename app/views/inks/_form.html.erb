@@ -1,8 +1,6 @@
 <%= form_with(model: ink, class: "form-horizontal") do |form| %>
   <% if ink.errors.any? %>
     <div id="error_explanation" class="alert alert-danger">
-      <h2><%= pluralize(ink.errors.count, "error") %> prohibited this ink from being saved:</h2>
-
       <ul>
         <% ink.errors.each do |error| %>
           <li><%= error.full_message %></li>

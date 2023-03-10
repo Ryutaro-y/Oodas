@@ -1,8 +1,6 @@
 <%= form_with(model: order, class: "form-horizontal") do |form| %>
   <% if order.errors.any? %>
     <div id="error_explanation" class="alert alert-danger">
-      <h2><%= pluralize(order.errors.count, "error") %> prohibited this order from being saved:</h2>
-
       <ul>
         <% order.errors.each do |error| %>
           <li><%= error.full_message %></li>
@@ -37,7 +35,7 @@
         <div class="form-group row">
           <%= form.label :order_date, "注文日", class: "col-sm-4 col-form-label text-sm-right" %>
           <div class="col-sm-8">
-            <%= form.date_select :order_date, use_month_numbers: true, class: "form-control" %>
+            <%= form.date_select :order_date, { use_month_numbers: true }, { class: "form-control" } %>
           </div>
         </div>
 

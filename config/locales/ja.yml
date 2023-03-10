@@ -1,0 +1,100 @@
+ja:
+  date:
+    order:
+      - year
+      - month
+      - day
+    formats:
+      default: "%Y/%m/%d"
+  activerecord:
+    models:
+      ink: "インク"
+      location: "ロケーション"
+      order: "注文履歴"
+      stock: "在庫"
+      supplier: "仕入れ先"
+      user: "管理者"
+    attributes:
+      ink:
+        name: "インク名"
+        color_type: "色"
+      location:
+        name: "ロケーション名"
+        stage: "段"
+        ink_name: "インク名"
+      order:
+        ink_name: "インク名"
+        order_quantity: "注文個数"
+        order_date: "注文日"
+        user_id: "管理者"
+        supplier_id: "仕入れ先名"
+      stock:
+        ink_name: "インク名"
+        color_type: "色"
+        location_name: "ロケーション名"
+        stage: "段"
+        quantity: "在庫数"
+        user_id: "管理者"
+      supplier:
+        name: "仕入れ先名"
+        email: "メールアドレス"
+      user:
+        name: "管理者"
+    errors:
+      models:
+        ink:
+          attributes:
+            name:
+              blank: "を入力してください。"
+              taken: "は既に登録されています。"
+            color_type:
+              blank: "を入力してください。"
+        location:
+          attributes:
+            name:
+              blank: "を入力してください。"
+            stage:
+              blank: "を入力してください。"
+            ink_name:
+              blank: "を入力してください。"
+              required: "はインクとして登録されていない名前です。"
+              taken: "は既にロケーションに登録されています。"
+        order:
+          attributes:
+            ink_name:
+              blank: "を入力してください。"
+            order_quantity:
+              blank: "を入力してください。"
+            order_date:
+              blank: "を入力してください。"
+            user_id:
+              blank: "を入力してください。"
+            supplier_id:
+              blank: "を入力してください。"
+        stock:
+          attributes:
+            ink_name:
+              blank: "を入力してください。"
+              taken: "は既に登録されています。"
+            color_type:
+              blank: "を入力してください。"
+            location_name:
+              blank: "を入力してください。"
+            stage:
+              blank: "を入力してください。"
+            quantity:
+              blank: "を入力してください。"
+            user_id:
+              blank: "を入力してください。"
+        supplier:
+          attributes:
+            name:
+              blank: "を入力してください。"
+            email:
+              blank: "を入力してください。"
+        user:
+          attributes:
+            name:
+              blank: "を入力してください。"
+        
+
