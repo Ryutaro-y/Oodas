@@ -35,7 +35,7 @@
         <td class="h6"><%= supplier.email %></td>
         <td><%= link_to '詳細', supplier, class: "btn btn-info" %></td>
         <td><%= link_to '編集', edit_supplier_path(supplier), class: "btn btn-secondary" %></td>
-        <td><%= link_to '削除', supplier, method: :delete, data: { confirm: '削除してもよろしいですか？' }, class: "btn btn-danger" %></td>
+        <td><%= button_to '削除', supplier, method: :delete, data: { confirm: '削除してもよろしいですか？' }, class: "btn btn-danger" %></td>
       </tr>
     <% end %>
   </tbody>

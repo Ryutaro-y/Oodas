@@ -1,6 +1,6 @@
-name
-田中 健介
-山口 武
-佐藤 拓也
-中村 健司
-鈴木 雄大
+name,email,password_digest
+田中 健介,kensuke@example.com,kensuke0000
+山口 武,takeshi@example.com,takeshi1111
+佐藤 拓也,takuya@example.com,takuya2222
+中村 健司,kenji@example.com,kenji3333
+鈴木 雄大,yuta@example.com,yuta4444

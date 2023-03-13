@@ -36,7 +36,7 @@
         <td class="h5" style="color: blue"><%= order.order_quantity %></td>
         <td class="h6"><%= order.order_date %></td>
         <td><%= link_to '詳細', order, class: "btn btn-info" %></td>
-        <td><%= link_to '削除', order, method: :delete, data: { confirm: '削除してもよろしいですか？' }, class: "btn btn-danger" %></td>
+        <td><%= button_to '削除', order, method: :delete, data: { confirm: '削除してもよろしいですか？' }, class: "btn btn-danger" %></td>
       </tr>
     <% end %>
   </tbody>

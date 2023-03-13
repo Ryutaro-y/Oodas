@@ -12,9 +12,11 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootstrap', '~> 5.1'
 gem 'csv'
 gem 'bootsnap', '>= 1.4.4', require: false
+gem 'bcrypt', '~> 3.1.18'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails', '~> 3.9.1'
 end
 
 group :development do
@@ -22,7 +24,6 @@ group :development do
   gem 'rack-mini-profiler', '~> 2.0'
   gem 'listen', '~> 3.3'
   gem 'spring'
-  gem 'letter_opener', '~> 1.7'
   gem 'letter_opener_web'
 end
 

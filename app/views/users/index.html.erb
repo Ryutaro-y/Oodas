@@ -33,7 +33,7 @@
         <td class="h6"><%= user.name %></td>
         <td><%= link_to '詳細', user, class: "btn btn-info" %></td>
         <td><%= link_to '編集', edit_user_path(user), class: "btn btn-secondary" %></td>
-        <td><%= link_to '削除', user, method: :delete, data: { confirm: '削除してもよろしいですか？' }, class: "btn btn-danger" %></td>
+        <td><%= button_to '削除', user, method: :delete, data: { confirm: '削除してもよろしいですか？' }, class: "btn btn-danger" %></td>
       </tr>
     <% end %>
   </tbody>

@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  get 'guest_login', to: 'guest_sessions#new'
+  post 'guest_login', to: 'guest_sessions#create'
+  delete 'logout', to: 'guest_sessions#destroy'
   root to: 'top#index'
   resources :orders
   resources :suppliers

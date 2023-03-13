@@ -40,6 +40,8 @@ ja:
         email: "メールアドレス"
       user:
         name: "管理者"
+        email: "メールアドレス"
+        password_digest: "パスワード"
     errors:
       models:
         ink:
@@ -95,6 +97,10 @@ ja:
         user:
           attributes:
             name:
+              blank: "を入力してください。"
+            email:
+              blank: "を入力してください。"
+            password_digest:
               blank: "を入力してください。"
         
 
