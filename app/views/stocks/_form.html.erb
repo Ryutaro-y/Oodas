@@ -30,7 +30,7 @@
         <div class="form-group row">
           <%= form.label :location_name, "ロケーション", class: "col-sm-4 col-form-label text-sm-right" %>
           <div class="col-sm-8">
-            <%= form.select :location_name, options_for_select(['ロケーション1', 'ロケーション2', 'ロケーション3']), {}, class: "form-control" %>
+            <%= form.select :location_name, options_for_select(['ロケーション1', 'ロケーション2', 'ロケーション3']), { prompt: "選択してください" }, class: "form-control" %>
           </div>
         </div>
 
@@ -51,7 +51,7 @@
         <div class="form-group row">
           <%= form.label :user_id, "管理者", class: "col-sm-4 col-form-label text-sm-right" %>
           <div class="col-sm-8">
-            <%= form.collection_select :user_id, User.all, :id, :name, {}, class: "form-control" %>
+            <%= form.collection_select :user_id, User.all, :id, :name, { prompt: "選択してください" }, class: "form-control" %>
           </div>
         </div>
 

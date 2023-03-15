@@ -1,5 +1,5 @@
 class Ink < ApplicationRecord
-    has_many :locations, foreign_key: :ink_name, primary_key: :name
+    has_many :locations, foreign_key: :ink_name, primary_key: :name, dependent: :destroy
     validates :name, uniqueness: true
     validates :name, presence: true
     validates :color_type, presence: true
