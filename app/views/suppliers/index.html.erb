@@ -1,0 +1,42 @@
+<% if flash[:notice] %>
+  <div class="alert alert-success" role="alert">
+    <%= flash[:notice] %>
+  </div>
+<% end %>
+
+<h3>仕入れ先一覧</h3>
+
+<div class="search_form">
+    <%= form_with url: search_path, local: true, method: :get do |f| %>
+      <%= f.text_field :word %>
+      <%= hidden_field_tag :range, 'Supplier' %>
+      <%= hidden_field_tag :search, 'partial_match' %>
+      <%= f.submit "絞り込み", class: "btn btn-success" %>
+    <% end %>
+</div>
+
+<div class="d-flex justify-content-end">
+  <%= link_to '新規', new_supplier_path, class: 'btn btn-primary' %>
+</div>
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>仕入れ先名</th>
+      <th>メールアドレス</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @suppliers.each do |supplier| %>
+      <tr>
+        <td class="h6"><%= supplier.name %></td>
+        <td class="h6"><%= supplier.email %></td>
+        <td><%= link_to '詳細', supplier, class: "btn btn-info" %></td>
+        <td><%= link_to '編集', edit_supplier_path(supplier), class: "btn btn-secondary" %></td>
+        <td><%= button_to '削除', supplier, method: :delete, data: { confirm: '削除してもよろしいですか？' }, class: "btn btn-danger" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

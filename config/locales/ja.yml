@@ -1,0 +1,128 @@
+ja:
+  date:
+    order:
+      - year
+      - month
+      - day
+    formats:
+      default: "%Y/%m/%d"
+  activerecord:
+    models:
+      ink: "インク"
+      location: "ロケーション"
+      order: "注文履歴"
+      stock: "在庫"
+      supplier: "仕入れ先"
+      user: "管理者"
+    attributes:
+      ink:
+        name: "インク名"
+        color_type: "色"
+      location:
+        name: "ロケーション名"
+        stage: "段"
+        ink_name: "インク名"
+        ink: "このインク"
+      order:
+        ink_name: "インク名"
+        order_quantity: "注文個数"
+        order_date: "注文日"
+        user_id: "管理者"
+        supplier_id: "仕入れ先名"
+        stock: "在庫"
+        user: "管理者"
+        supplier: "仕入れ先"
+      stock:
+        ink_name: "インク名"
+        color_type: "色"
+        location_name: "ロケーション名"
+        stage: "段"
+        quantity: "在庫数"
+        user_id: "管理者"
+        user: "管理者"
+        location: "ロケーション"
+      supplier:
+        name: "仕入れ先名"
+        email: "メールアドレス"
+      user:
+        name: "管理者"
+        email: "メールアドレス"
+        password: "パスワード"
+    errors:
+      messages:
+        record_invalid: "バリデーションに失敗しました: %{errors}"
+      models:
+        ink:
+          attributes:
+            name:
+              blank: "を入力してください。"
+              taken: "は既に登録されています。"
+            color_type:
+              blank: "を入力してください。"
+        location:
+          attributes:
+            name:
+              blank: "を入力してください。"
+            stage:
+              blank: "を入力してください。"
+            ink_name:
+              blank: "を入力してください。"
+              taken: "は既に登録されています。"
+            ink:
+              required: "は登録されていない名前です。"
+        order:
+          attributes:
+            ink_name:
+              blank: "を入力してください。"
+            order_quantity:
+              blank: "を入力してください。"
+            order_date:
+              blank: "を入力してください。"
+            user_id:
+              blank: "を入力してください。"
+            supplier_id:
+              blank: "を入力してください。"
+            stock:
+              required: "に存在しません。"
+            user:
+              required: "に存在しません。"
+            supplier:
+              required: "に存在しません。"
+        stock:
+          attributes:
+            ink_name:
+              blank: "を入力してください。"
+              taken: "は既に登録されています。"
+            color_type:
+              blank: "を入力してください。"
+            location_name:
+              blank: "を入力してください。"
+            stage:
+              blank: "を入力してください。"
+            quantity:
+              blank: "を入力してください。"
+            user_id:
+              blank: "を入力してください。"
+            user:
+              required: "に存在しません。"
+            location:
+              required: "に存在しません。"
+        supplier:
+          attributes:
+            name:
+              blank: "を入力してください。"
+            email:
+              blank: "を入力してください。"
+        user:
+          attributes:
+            name:
+              blank: "を入力してください。"
+            email:
+              blank: "を入力してください。"
+              taken: "は既に登録されています。"
+            password:
+              blank: "を入力してください。"
+              missing_translation: "を入力してください。"
+            password_digest:
+              blank: "を入力してください。"
+

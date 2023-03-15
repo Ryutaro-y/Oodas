@@ -1,0 +1,41 @@
+@import "bootstrap/scss/bootstrap";
+
+.navbar-brand{
+    color: white;
+    padding-left: 20px;
+    margin-right: 55%;
+}
+
+.nav-link {
+    font-size: 18px;
+    color: white;
+}
+
+h3 {
+    background-color: rgb(228, 228, 228);
+    padding: 10px 20px;
+}
+
+.not_find {
+    font-size: 18px;
+}
+
+.col-form-label {
+    text-align: center;
+}
+
+.form-group {
+    margin-top: 1.5rem;
+}
+
+.offset-sm-4 {
+    margin-left: 85%;
+}
+
+.justify-content-end {
+    margin-right: 25px;
+}
+
+.search_form {
+    margin-left: 15px;
+}

@@ -1,0 +1,21 @@
+<% if flash[:notice] %>
+    <div class="alert alert-success" role="alert">
+        <%= flash[:notice] %>
+    </div>
+<% end %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3 mt-5">
+            <h1 class="text-center">簡単発注アプリ Oodas</h1>
+            <hr>
+            <p class="lead text-center">簡単に発注管理ができるアプリです。</p>
+            <%= link_to "インク一覧", inks_path, class: "btn btn-primary btn-lg d-block mx-auto mt-5" %>
+            <%= link_to "ロケーション", locations_path, class: "btn btn-secondary btn-lg d-block mx-auto mt-3" %>
+            <%= link_to "在庫状況", stocks_path, class: "btn btn-primary btn-lg d-block mx-auto mt-3" %>
+            <%= link_to "注文履歴", orders_path, class: "btn btn-secondary btn-lg d-block mx-auto mt-3" %>
+            <%= link_to "仕入れ先", suppliers_path, class: "btn btn-primary btn-lg d-block mx-auto mt-3" %>
+            <%= link_to "管理者", users_path, class: "btn btn-secondary btn-lg d-block mx-auto mt-3" %>
+        </div>
+    </div>
+</div>
